@@ -1,1 +1,147 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Raspberry_Pi_2_3 U?
+U 1 1 5AF38DD5
+P 2750 3250
+F 0 "U?" H 3450 2000 50  0000 C CNN
+F 1 "Raspberry_Pi_Zero" H 2350 4150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 3750 4500 50  0001 C CNN
+F 3 "" H 2800 3100 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8800 1500 8900 1600
+$Comp
+L MCP3008 U?
+U 1 1 5AF38F39
+P 5300 3250
+F 0 "U?" H 4850 3700 50  0000 C CNN
+F 1 "MCP3008" H 5650 3700 50  0000 C CNN
+F 2 "" H 5200 3150 50  0000 C CNN
+F 3 "" H 5300 3250 50  0000 C CNN
+	1    5300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AF38F74
+P 4500 2250
+F 0 "C?" H 4525 2350 50  0000 L CNN
+F 1 "1uF" H 4525 2150 50  0000 L CNN
+F 2 "" H 4538 2100 50  0000 C CNN
+F 3 "" H 4500 2250 50  0000 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1950 4500 1950
+Wire Wire Line
+	4500 1950 4500 2100
+Wire Wire Line
+	4500 2400 4500 4900
+Wire Wire Line
+	4500 4900 2350 4900
+Wire Wire Line
+	2350 4900 2350 4550
+Wire Wire Line
+	4500 2100 5400 2100
+Wire Wire Line
+	5200 2100 5200 2650
+Wire Wire Line
+	5400 2100 5400 2650
+Connection ~ 5200 2100
+Wire Wire Line
+	5200 3950 5200 4800
+Wire Wire Line
+	5200 4800 2450 4800
+Wire Wire Line
+	2450 4800 2450 4550
+Wire Wire Line
+	5400 3950 5400 4700
+Wire Wire Line
+	5400 4700 2550 4700
+Wire Wire Line
+	2550 4700 2550 4550
+Wire Wire Line
+	3650 3450 4050 3450
+Wire Wire Line
+	4050 3450 4050 4100
+Wire Wire Line
+	4050 4100 6400 4100
+Wire Wire Line
+	6400 4100 6400 3150
+Wire Wire Line
+	6400 3150 6000 3150
+Wire Wire Line
+	3650 3350 4250 3350
+Wire Wire Line
+	4250 3350 4250 3950
+Wire Wire Line
+	4250 3950 6300 3950
+Wire Wire Line
+	6300 3950 6300 3350
+Wire Wire Line
+	6300 3350 6000 3350
+Wire Wire Line
+	6000 3250 6350 3250
+Wire Wire Line
+	6350 3250 6350 4000
+Wire Wire Line
+	6350 4000 4200 4000
+Wire Wire Line
+	4200 4000 4200 3250
+Wire Wire Line
+	4200 3250 3650 3250
+Wire Wire Line
+	3650 3150 4400 3150
+Wire Wire Line
+	4400 3150 4400 4300
+Wire Wire Line
+	4400 4300 6000 4300
+Wire Wire Line
+	6000 4300 6000 3450
+$EndSCHEMATC
