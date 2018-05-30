@@ -1,0 +1,3 @@
+# Look-Up Tables
+
+A Look-Up Table (LUT) is mathematically precise way of taking specific RGB image values form a source image – and modifying them to new RGB values by changing the hue, saturation and brightness values of that source image. A LUT can be scientifically precise (such as moving from the sRGB color space to the DCI P3 Color Space). A LUT can also be used creatively to impose a specific ‘Look’ on a source image, such as the Bleach Bypass look.
