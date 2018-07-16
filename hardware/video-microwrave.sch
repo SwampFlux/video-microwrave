@@ -1,34 +1,128 @@
 EESchema Schematic File Version 2
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
 LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
 LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
 LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microchip
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:nxp
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
 LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
 LIBS:eurocad
+LIBS:SparkFun-Aesthetics
+LIBS:SparkFun-Batteries
+LIBS:SparkFun-Boards
+LIBS:SparkFun-Capacitors
+LIBS:SparkFun-Clocks
+LIBS:SparkFun-Coils
+LIBS:SparkFun-Connectors
+LIBS:SparkFun-DiscreteSemi
+LIBS:SparkFun-Displays
+LIBS:SparkFun-Electromechanical
+LIBS:SparkFun-Fuses
+LIBS:SparkFun-GPS
+LIBS:SparkFun-Hardware
+LIBS:SparkFun-IC-Amplifiers
+LIBS:SparkFun-IC-Comms
+LIBS:SparkFun-IC-Conversion
+LIBS:SparkFun-IC-Logic
+LIBS:SparkFun-IC-Memory
+LIBS:SparkFun-IC-Microcontroller
+LIBS:SparkFun-IC-Power
+LIBS:SparkFun-IC-Special-Function
+LIBS:SparkFun-Jumpers
+LIBS:SparkFun-LED
+LIBS:SparkFun-PowerSymbols
+LIBS:SparkFun-Resistors
+LIBS:SparkFun-RF
+LIBS:SparkFun-Sensors
+LIBS:SparkFun-Switches
 LIBS:video-microwrave-cache
 EELAYER 25 0
 EELAYER END
@@ -384,9 +478,13 @@ CV7_result
 Text GLabel 6300 3450 3    60   Input ~ 0
 5V
 Wire Wire Line
-	6400 2950 6200 2950
+	6400 2950 6300 2950
 Wire Wire Line
-	6300 2950 6300 3450
+	6300 2950 6200 2950
+Wire Wire Line
+	6300 2950 6300 3200
+Wire Wire Line
+	6300 3200 6300 3450
 Connection ~ 6300 3200
 Connection ~ 6300 2950
 Text GLabel 6600 3200 2    60   Input ~ 0

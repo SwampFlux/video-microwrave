@@ -4,8 +4,8 @@
 #extension GL_ARB_shading_language_420pack : enable
 #extension GL_GOOGLE_include_directive : enable
 
-#include "utils.glsl"
-#include "perobject.glsl"
+#include "../utilities/utils.glsl"
+#include "../utilities/perobject.glsl"
 
 layout (location = 0) in vec2 texCoord;
 layout (location = 1) in vec3 modelPos;
@@ -82,5 +82,5 @@ void main()
 	color += fres * 0.5;
 #endif
 
-	outFragColor = vec4(color, 1);
+	gl_FragColor = vec4(color, 1);
 }
