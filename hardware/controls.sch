@@ -1,0 +1,234 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PJ301M-12 J?
+U 1 1 5BE21CDD
+P 1550 1800
+F 0 "J?" H 1200 1600 50  0000 C CNN
+F 1 "PJ301M-12" H 1400 2050 50  0000 C CNN
+F 2 "" H 1550 1800 50  0000 C CNN
+F 3 "" H 1550 1800 50  0000 C CNN
+	1    1550 1800
+	1    0    0    1   
+$EndComp
+Text HLabel 2000 1150 0    60   BiDi ~ 0
+-5V
+$Comp
+L MCP6004 U?
+U 1 1 5BE25FAF
+P 3450 1600
+F 0 "U?" H 3450 1800 50  0000 L CNN
+F 1 "MCP6004" H 3450 1400 50  0000 L CNN
+F 2 "" H 3400 1700 50  0000 C CNN
+F 3 "" H 3500 1800 50  0000 C CNN
+	1    3450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5BE2619C
+P 2250 2350
+F 0 "#PWR?" H 2250 2100 50  0001 C CNN
+F 1 "Earth" H 2250 2200 50  0001 C CNN
+F 2 "" H 2250 2350 50  0000 C CNN
+F 3 "" H 2250 2350 50  0000 C CNN
+	1    2250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1800 2250 1800
+Wire Wire Line
+	2250 1800 2250 1950
+Wire Wire Line
+	2250 1950 2250 2350
+Wire Wire Line
+	2000 1950 2250 1950
+Connection ~ 2250 1950
+$Comp
+L R R?
+U 1 1 5BE263D1
+P 2500 1700
+F 0 "R?" V 2580 1700 50  0000 C CNN
+F 1 "1k" V 2500 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2430 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0000 C CNN
+F 4 "CR21-102J-T" V 2400 1700 60  0000 C CNN "Manufacturer Number"
+	1    2500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5BE26538
+P 2500 1350
+F 0 "R?" V 2580 1350 50  0000 C CNN
+F 1 "499" V 2500 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2430 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0000 C CNN
+F 4 "CR21-4990F-T" V 2400 1350 60  0000 C CNN "Field4"
+	1    2500 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1150 2000 1350
+Wire Wire Line
+	2000 1350 2350 1350
+Wire Wire Line
+	2000 1700 2350 1700
+$Comp
+L +5V #PWR?
+U 1 1 5BE268F6
+P 3350 1300
+F 0 "#PWR?" H 3350 1150 50  0001 C CNN
+F 1 "+5V" H 3350 1440 50  0000 C CNN
+F 2 "" H 3350 1300 50  0000 C CNN
+F 3 "" H 3350 1300 50  0000 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5BE26952
+P 3350 1900
+F 0 "#PWR?" H 3350 1650 50  0001 C CNN
+F 1 "Earth" H 3350 1750 50  0001 C CNN
+F 2 "" H 3350 1900 50  0000 C CNN
+F 3 "" H 3350 1900 50  0000 C CNN
+	1    3350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1350 2900 1350
+Wire Wire Line
+	2900 1350 2900 1700
+Wire Wire Line
+	2900 1700 2900 2300
+Wire Wire Line
+	2900 2300 2900 2700
+Wire Wire Line
+	2650 1700 2900 1700
+Wire Wire Line
+	2900 1700 3150 1700
+Connection ~ 2900 1700
+$Comp
+L Earth #PWR?
+U 1 1 5BE271CC
+P 3050 1150
+F 0 "#PWR?" H 3050 900 50  0001 C CNN
+F 1 "Earth" H 3050 1000 50  0001 C CNN
+F 2 "" H 3050 1150 50  0000 C CNN
+F 3 "" H 3050 1150 50  0000 C CNN
+	1    3050 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 1500 3050 1500
+Wire Wire Line
+	3050 1500 3050 1150
+$Comp
+L C C?
+U 1 1 5BE27254
+P 3400 2300
+F 0 "C?" V 3450 2350 50  0000 L CNN
+F 1 "330pF" V 3350 2350 50  0000 L CNN
+F 2 "" H 3438 2150 50  0000 C CNN
+F 3 "" H 3400 2300 50  0000 C CNN
+	1    3400 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2300 3250 2300
+$Comp
+L R R?
+U 1 1 5BE276C0
+P 3400 2700
+F 0 "R?" V 3480 2700 50  0000 C CNN
+F 1 "270" V 3400 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 2700 50  0001 C CNN
+F 3 "" H 3400 2700 50  0000 C CNN
+F 4 "9C08052A2700JLRT/R" V 3300 2700 60  0000 C CNN "Manufacturer Number"
+	1    3400 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2700 3250 2700
+Connection ~ 2900 2300
+$Comp
+L R R?
+U 1 1 5BE278C1
+P 4300 1600
+F 0 "R?" V 4380 1600 50  0000 C CNN
+F 1 "100R" V 4300 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4230 1600 50  0001 C CNN
+F 3 "" H 4300 1600 50  0000 C CNN
+F 4 "CR21-101J-T" V 4200 1600 60  0000 C CNN "Manufacturer Number"
+	1    4300 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1600 3950 1600
+Wire Wire Line
+	3950 1600 4150 1600
+Wire Wire Line
+	3550 2300 3950 2300
+Wire Wire Line
+	3950 1600 3950 2300
+Wire Wire Line
+	3950 2300 3950 2700
+Connection ~ 3950 1600
+Wire Wire Line
+	3950 2700 3550 2700
+Connection ~ 3950 2300
+Text HLabel 4850 1150 2    60   Output ~ 0
+CV1
+Wire Wire Line
+	4450 1600 4700 1600
+Wire Wire Line
+	4700 1600 4700 1150
+Wire Wire Line
+	4700 1150 4850 1150
+$EndSCHEMATC

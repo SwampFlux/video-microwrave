@@ -1,4 +1,4 @@
-update=Wed 09 May 2018 08:52:38 PM EST
+update=Tue 06 Nov 2018 02:11:51 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/pi/Downloads/eurocad-master/eurocad
+LibName30=/home/pi/Documents/KiCAD4/eurocad/eurocad
+LibName31=/home/pi/Projects/Microwrave Components/microwrave

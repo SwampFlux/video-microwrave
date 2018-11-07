@@ -1,0 +1,86 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3500 2800 0    60   Input ~ 0
+input_1
+Text HLabel 3500 3000 0    60   Input ~ 0
+input_2
+Text HLabel 3500 3200 0    60   Input ~ 0
+input_3
+Text HLabel 3500 3400 0    60   Input ~ 0
+input_4
+Text HLabel 3500 3600 0    60   Input ~ 0
+input_5
+Text HLabel 3500 3800 0    60   Input ~ 0
+input_6
+Text HLabel 3500 4000 0    60   Input ~ 0
+input_7
+Text HLabel 3500 4200 0    60   Input ~ 0
+input_8
+$Comp
+L MCP3424 U?
+U 1 1 5BDF6151
+P 4850 3200
+F 0 "U?" H 4850 2700 60  0000 C CNN
+F 1 "MCP3424" H 4850 3700 60  0000 C CNN
+F 2 "" H 4850 3200 60  0001 C CNN
+F 3 "" H 4850 3200 60  0001 C CNN
+	1    4850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP3424 U?
+U 1 1 5BDF618D
+P 4900 4350
+F 0 "U?" H 4900 3850 60  0000 C CNN
+F 1 "MCP3424" H 4900 4850 60  0000 C CNN
+F 2 "" H 4900 4350 60  0001 C CNN
+F 3 "" H 4900 4350 60  0001 C CNN
+	1    4900 4350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
