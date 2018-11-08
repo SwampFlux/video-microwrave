@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -83,7 +83,9 @@ $EndComp
 Wire Wire Line
 	2000 1800 2250 1800
 Wire Wire Line
-	2250 1800 2250 2350
+	2250 1800 2250 1950
+Wire Wire Line
+	2250 1950 2250 2350
 Wire Wire Line
 	2000 1950 2250 1950
 Connection ~ 2250 1950
@@ -142,9 +144,15 @@ $EndComp
 Wire Wire Line
 	2650 1350 2900 1350
 Wire Wire Line
-	2900 1350 2900 2700
+	2900 1350 2900 1700
 Wire Wire Line
-	2650 1700 3150 1700
+	2900 1700 2900 2300
+Wire Wire Line
+	2900 2300 2900 2700
+Wire Wire Line
+	2650 1700 2900 1700
+Wire Wire Line
+	2900 1700 3150 1700
 Connection ~ 2900 1700
 $Comp
 L Earth #PWR020
@@ -166,8 +174,8 @@ L C C301
 U 1 1 5BE27254
 P 3400 2300
 F 0 "C301" V 3450 2350 50  0000 L CNN
-F 1 "330pF" V 3350 2350 50  0000 L CNN
-F 2 "" H 3438 2150 50  0000 C CNN
+F 1 "560pF" V 3350 2350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 3438 2150 50  0001 C CNN
 F 3 "" H 3400 2300 50  0000 C CNN
 	1    3400 2300
 	0    1    1    0   
@@ -202,11 +210,15 @@ F 4 "CR21-101J-T" V 4200 1600 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 1600 4150 1600
+	3750 1600 3950 1600
+Wire Wire Line
+	3950 1600 4150 1600
 Wire Wire Line
 	3550 2300 3950 2300
 Wire Wire Line
-	3950 1600 3950 2700
+	3950 1600 3950 2300
+Wire Wire Line
+	3950 2300 3950 2700
 Connection ~ 3950 1600
 Wire Wire Line
 	3950 2700 3550 2700
@@ -246,7 +258,9 @@ $EndComp
 Wire Wire Line
 	6950 1800 7200 1800
 Wire Wire Line
-	7200 1800 7200 2350
+	7200 1800 7200 1950
+Wire Wire Line
+	7200 1950 7200 2350
 Wire Wire Line
 	6950 1950 7200 1950
 Connection ~ 7200 1950
@@ -305,9 +319,15 @@ $EndComp
 Wire Wire Line
 	7600 1350 7850 1350
 Wire Wire Line
-	7850 1350 7850 2700
+	7850 1350 7850 1700
 Wire Wire Line
-	7600 1700 8100 1700
+	7850 1700 7850 2300
+Wire Wire Line
+	7850 2300 7850 2700
+Wire Wire Line
+	7600 1700 7850 1700
+Wire Wire Line
+	7850 1700 8100 1700
 Connection ~ 7850 1700
 $Comp
 L Earth #PWR024
@@ -329,8 +349,8 @@ L C C302
 U 1 1 5BE45A84
 P 8350 2300
 F 0 "C302" V 8400 2350 50  0000 L CNN
-F 1 "330pF" V 8300 2350 50  0000 L CNN
-F 2 "" H 8388 2150 50  0000 C CNN
+F 1 "560pF" V 8300 2350 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 8388 2150 50  0001 C CNN
 F 3 "" H 8350 2300 50  0000 C CNN
 	1    8350 2300
 	0    1    1    0   
@@ -365,11 +385,15 @@ F 4 "CR21-101J-T" V 9150 1600 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 1600 9100 1600
+	8700 1600 8900 1600
+Wire Wire Line
+	8900 1600 9100 1600
 Wire Wire Line
 	8500 2300 8900 2300
 Wire Wire Line
-	8900 1600 8900 2700
+	8900 1600 8900 2300
+Wire Wire Line
+	8900 2300 8900 2700
 Connection ~ 8900 1600
 Wire Wire Line
 	8900 2700 8500 2700
@@ -420,7 +444,9 @@ $EndComp
 Wire Wire Line
 	2000 4050 2250 4050
 Wire Wire Line
-	2250 4050 2250 4600
+	2250 4050 2250 4200
+Wire Wire Line
+	2250 4200 2250 4600
 Wire Wire Line
 	2000 4200 2250 4200
 Connection ~ 2250 4200
@@ -479,9 +505,15 @@ $EndComp
 Wire Wire Line
 	2650 3600 2900 3600
 Wire Wire Line
-	2900 3600 2900 4950
+	2900 3600 2900 3950
 Wire Wire Line
-	2650 3950 3150 3950
+	2900 3950 2900 4550
+Wire Wire Line
+	2900 4550 2900 4950
+Wire Wire Line
+	2650 3950 2900 3950
+Wire Wire Line
+	2900 3950 3150 3950
 Connection ~ 2900 3950
 $Comp
 L Earth #PWR028
@@ -503,8 +535,8 @@ L C C303
 U 1 1 5BE4609F
 P 3400 4550
 F 0 "C303" V 3450 4600 50  0000 L CNN
-F 1 "330pF" V 3350 4600 50  0000 L CNN
-F 2 "" H 3438 4400 50  0000 C CNN
+F 1 "560pF" V 3350 4600 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 3438 4400 50  0001 C CNN
 F 3 "" H 3400 4550 50  0000 C CNN
 	1    3400 4550
 	0    1    1    0   
@@ -539,11 +571,15 @@ F 4 "CR21-101J-T" V 4200 3850 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3850 4150 3850
+	3750 3850 3950 3850
+Wire Wire Line
+	3950 3850 4150 3850
 Wire Wire Line
 	3550 4550 3950 4550
 Wire Wire Line
-	3950 3850 3950 4950
+	3950 3850 3950 4550
+Wire Wire Line
+	3950 4550 3950 4950
 Connection ~ 3950 3850
 Wire Wire Line
 	3950 4950 3550 4950
@@ -583,7 +619,9 @@ $EndComp
 Wire Wire Line
 	6950 4050 7200 4050
 Wire Wire Line
-	7200 4050 7200 4600
+	7200 4050 7200 4200
+Wire Wire Line
+	7200 4200 7200 4600
 Wire Wire Line
 	6950 4200 7200 4200
 Connection ~ 7200 4200
@@ -642,9 +680,15 @@ $EndComp
 Wire Wire Line
 	7600 3600 7850 3600
 Wire Wire Line
-	7850 3600 7850 4950
+	7850 3600 7850 3950
 Wire Wire Line
-	7600 3950 8100 3950
+	7850 3950 7850 4550
+Wire Wire Line
+	7850 4550 7850 4950
+Wire Wire Line
+	7600 3950 7850 3950
+Wire Wire Line
+	7850 3950 8100 3950
 Connection ~ 7850 3950
 $Comp
 L Earth #PWR032
@@ -666,8 +710,8 @@ L C C304
 U 1 1 5BE464CD
 P 8350 4550
 F 0 "C304" V 8400 4600 50  0000 L CNN
-F 1 "330pF" V 8300 4600 50  0000 L CNN
-F 2 "" H 8388 4400 50  0000 C CNN
+F 1 "560pF" V 8300 4600 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 8388 4400 50  0001 C CNN
 F 3 "" H 8350 4550 50  0000 C CNN
 	1    8350 4550
 	0    1    1    0   
@@ -702,11 +746,15 @@ F 4 "CR21-101J-T" V 9150 3850 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 3850 9100 3850
+	8700 3850 8900 3850
+Wire Wire Line
+	8900 3850 9100 3850
 Wire Wire Line
 	8500 4550 8900 4550
 Wire Wire Line
-	8900 3850 8900 4950
+	8900 3850 8900 4550
+Wire Wire Line
+	8900 4550 8900 4950
 Connection ~ 8900 3850
 Wire Wire Line
 	8900 4950 8500 4950
@@ -741,4 +789,61 @@ F 3 "" H 3500 4050 50  0000 C CNN
 	3    3450 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_01X06 P?
+U 1 1 5BE4B196
+P 1900 6550
+F 0 "P?" H 1900 6900 50  0000 C CNN
+F 1 "CONN_01X06" V 2000 6550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" V 2100 6550 50  0000 C CNN
+F 3 "" H 1900 6550 50  0000 C CNN
+	1    1900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5BE4B7BC
+P 1600 6200
+F 0 "#PWR?" H 1600 6050 50  0001 C CNN
+F 1 "+5V" H 1600 6340 50  0000 C CNN
+F 2 "" H 1600 6200 50  0000 C CNN
+F 3 "" H 1600 6200 50  0000 C CNN
+	1    1600 6200
+	1    0    0    -1  
+$EndComp
+Text HLabel 1600 6400 0    60   Input ~ 0
+CV1
+Wire Wire Line
+	1600 6200 1600 6300
+Wire Wire Line
+	1600 6300 1700 6300
+Wire Wire Line
+	1600 6400 1700 6400
+Text HLabel 1600 6500 0    60   Input ~ 0
+CV2
+Text HLabel 1600 6600 0    60   Input ~ 0
+CV3
+Text HLabel 1600 6700 0    60   Input ~ 0
+CV4
+$Comp
+L Earth #PWR?
+U 1 1 5BE4BF98
+P 1600 6900
+F 0 "#PWR?" H 1600 6650 50  0001 C CNN
+F 1 "Earth" H 1600 6750 50  0001 C CNN
+F 2 "" H 1600 6900 50  0000 C CNN
+F 3 "" H 1600 6900 50  0000 C CNN
+	1    1600 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6800 1600 6800
+Wire Wire Line
+	1600 6800 1600 6900
+Wire Wire Line
+	1600 6700 1700 6700
+Wire Wire Line
+	1700 6600 1600 6600
+Wire Wire Line
+	1600 6500 1700 6500
 $EndSCHEMATC
