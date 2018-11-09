@@ -1,4 +1,4 @@
-update=Tue 06 Nov 2018 02:11:51 PM EST
+update=Fri 09 Nov 2018 05:45:43 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -60,3 +58,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=/home/pi/Documents/KiCAD4/eurocad/eurocad
 LibName31=/home/pi/Projects/Microwrave Components/microwrave
+[general]
+version=1
