@@ -344,22 +344,6 @@ F 3 "" H 7850 2550 50  0000 C CNN
 	1    7850 2550
 	1    0    0    -1  
 $EndComp
-Text Label 5400 1350 0    60   ~ 0
-1
-Text Label 5300 1450 0    60   ~ 0
-2
-Text Label 5200 1550 0    60   ~ 0
-3
-Text Label 5100 1650 0    60   ~ 0
-4
-Text Label 5400 2150 0    60   ~ 0
-5
-Text Label 5300 2250 0    60   ~ 0
-6
-Text Label 5200 2350 0    60   ~ 0
-7
-Text Label 5100 2450 0    60   ~ 0
-8
 Wire Bus Line
 	10250 850  10250 2900
 Wire Bus Line
@@ -398,22 +382,22 @@ Wire Wire Line
 	9450 2150 10150 2150
 Wire Wire Line
 	9450 2250 10150 2250
-Text Label 9750 1350 0    60   ~ 0
-1
-Text Label 9800 1450 0    60   ~ 0
-2
-Text Label 9850 1550 0    60   ~ 0
-3
-Text Label 9900 1650 0    60   ~ 0
-4
-Text Label 9750 1950 0    60   ~ 0
-5
-Text Label 9800 2050 0    60   ~ 0
-6
-Text Label 9850 2150 0    60   ~ 0
-7
-Text Label 9900 2250 0    60   ~ 0
-8
+Text Label 9600 1350 0    60   ~ 0
+buffered_1
+Text Label 9600 1450 0    60   ~ 0
+buffered_2
+Text Label 9600 1550 0    60   ~ 0
+buffered_3
+Text Label 9600 1650 0    60   ~ 0
+buffered_4
+Text Label 9600 1950 0    60   ~ 0
+buffered_5
+Text Label 9600 2050 0    60   ~ 0
+buffered_6
+Text Label 9600 2150 0    60   ~ 0
+buffered_7
+Text Label 9600 2250 0    60   ~ 0
+buffered_8
 Entry Wire Line
 	1200 4100 1300 4200
 Entry Wire Line
@@ -447,21 +431,21 @@ Wire Wire Line
 Wire Wire Line
 	1300 4900 2400 4900
 Text Label 1450 4200 0    60   ~ 0
-1
+buffered_1
 Text Label 1500 4300 0    60   ~ 0
-2
+buffered_2
 Text Label 1550 4400 0    60   ~ 0
-3
+buffered_3
 Text Label 1600 4500 0    60   ~ 0
-4
+buffered_4
 Text Label 1650 4600 0    60   ~ 0
-5
+buffered_5
 Text Label 1700 4700 0    60   ~ 0
-6
+buffered_6
 Text Label 1750 4800 0    60   ~ 0
-7
+buffered_7
 Text Label 1800 4900 0    60   ~ 0
-8
+buffered_8
 Wire Wire Line
 	4150 4300 4550 4300
 Wire Wire Line
@@ -524,4 +508,20 @@ Text Label 5800 3550 0    60   ~ 0
 I2C_clock
 Text Label 5800 3300 0    60   ~ 0
 I2C_data
+Text Label 4900 1350 0    60   ~ 0
+cv1_raw
+Text Label 4900 1450 0    60   ~ 0
+cv2_raw
+Text Label 4900 1550 0    60   ~ 0
+cv3_raw
+Text Label 4900 1650 0    60   ~ 0
+cv4_raw
+Text Label 4900 2150 0    60   ~ 0
+cv5_raw
+Text Label 4900 2250 0    60   ~ 0
+cv6_raw
+Text Label 4900 2350 0    60   ~ 0
+cv7_raw
+Text Label 4900 2450 0    60   ~ 0
+cv8_raw
 $EndSCHEMATC
