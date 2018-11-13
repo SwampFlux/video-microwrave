@@ -86,7 +86,7 @@ U 1 1 5BE1E5E0
 P 4400 2050
 F 0 "L201" V 4350 2050 50  0000 C CNN
 F 1 "100nH" V 4475 2050 50  0000 C CNN
-F 2 "Choke_SMD:Choke_Double_SMD_Wuerth-WE-DD-Typ-M-Typ-S" H 4400 2050 50  0001 C CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm" H 4400 2050 50  0001 C CNN
 F 3 "" H 4400 2050 50  0000 C CNN
 	1    4400 2050
 	0    1    1    0   
@@ -97,7 +97,7 @@ U 1 1 5BE1E717
 P 4400 2900
 F 0 "L202" V 4350 2900 50  0000 C CNN
 F 1 "100nH" V 4475 2900 50  0000 C CNN
-F 2 "Choke_SMD:Choke_Double_SMD_Wuerth-WE-DD-Typ-M-Typ-S" H 4400 2900 50  0001 C CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm" H 4400 2900 50  0001 C CNN
 F 3 "" H 4400 2900 50  0000 C CNN
 	1    4400 2900
 	0    1    1    0   
@@ -110,7 +110,7 @@ U 1 1 5BE1E8D0
 P 7500 3150
 F 0 "L203" V 7450 3150 50  0000 C CNN
 F 1 "6u8H" V 7575 3150 50  0000 C CNN
-F 2 "Choke_Toroid_ThroughHole:Choke_Toroid_horizontal_Diameter4-5mm_Amidon-T16" H 7500 3150 50  0001 C CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm" H 7500 3150 50  0001 C CNN
 F 3 "" H 7500 3150 50  0000 C CNN
 	1    7500 3150
 	0    1    1    0   
@@ -567,4 +567,8 @@ Wire Wire Line
 	5550 4100 5400 4100
 Connection ~ 5400 4350
 NoConn ~ 4450 4700
+Text Label 3950 2900 0    60   ~ 0
++12
+Text Label 3950 2050 0    60   ~ 0
+-12
 $EndSCHEMATC

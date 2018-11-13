@@ -430,9 +430,9 @@ Wire Wire Line
 	1300 4800 2400 4800
 Wire Wire Line
 	1300 4900 2400 4900
-Text Label 1450 4300 0    60   ~ 0
+Text Label 1450 4200 0    60   ~ 0
 buffered_1
-Text Label 1500 4200 0    60   ~ 0
+Text Label 1500 4300 0    60   ~ 0
 buffered_2
 Text Label 1550 4400 0    60   ~ 0
 buffered_3
