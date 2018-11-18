@@ -1,7 +1,7 @@
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/types/ofColor.o: \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/types/ofColor.cpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/types/ofColor.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h \
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/types/ofColor.o: \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/types/ofColor.cpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/types/ofColor.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
  /opt/vc/include/bcm_host.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/interface/vcos/vcos.h \
@@ -76,37 +76,37 @@
  /opt/vc/include/EGL/../KHR/khrplatform.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/EGL/eglext.h /opt/vc/include/EGL/eglext_brcm.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/common.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/setup.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../simd/platform.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/precision.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_int.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_fixes.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_vectorize.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../fwd.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common_simd.inl
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/common.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/setup.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../simd/platform.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/precision.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_int.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/_fixes.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/_vectorize.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec1.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../fwd.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec1.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common_simd.inl
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/types/ofColor.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/types/ofColor.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h:
 
 /opt/vc/include/bcm_host.h:
 
@@ -266,56 +266,56 @@
 
 /opt/vc/include/EGL/eglext_brcm.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/common.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/common.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/setup.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/setup.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../simd/platform.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../simd/platform.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/precision.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/precision.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_int.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_int.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_fixes.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/_fixes.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_vectorize.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/_vectorize.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec1.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../fwd.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../fwd.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec1.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/func_common_simd.inl:

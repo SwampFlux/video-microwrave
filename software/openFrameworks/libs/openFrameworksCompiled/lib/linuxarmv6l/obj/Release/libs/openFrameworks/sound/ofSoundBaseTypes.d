@@ -1,7 +1,7 @@
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/sound/ofSoundBaseTypes.o: \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.cpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h \
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/sound/ofSoundBaseTypes.o: \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.cpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
  /opt/vc/include/bcm_host.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/interface/vcos/vcos.h \
@@ -76,14 +76,14 @@
  /opt/vc/include/EGL/../KHR/khrplatform.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/EGL/eglext.h /opt/vc/include/EGL/eglext_brcm.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofLog.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofFileUtils.h
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofLog.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h:
 
 /opt/vc/include/bcm_host.h:
 
@@ -243,10 +243,10 @@
 
 /opt/vc/include/EGL/eglext_brcm.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofLog.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofLog.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofFileUtils.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h:

@@ -1,7 +1,7 @@
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/sound/ofSoundPlayer.o: \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundPlayer.cpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundPlayer.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h \
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworksCompiled/lib/linuxarmv6l/obj/Release/libs/openFrameworks/sound/ofRtAudioSoundStream.o: \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofRtAudioSoundStream.cpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofRtAudioSoundStream.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h \
  /opt/vc/include/bcm_host.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/interface/vcos/vcos.h \
@@ -76,45 +76,47 @@
  /opt/vc/include/EGL/../KHR/khrplatform.h \
  /opt/vc/include/interface/vmcs_host/vc_dispmanx.h \
  /opt/vc/include/EGL/eglext.h /opt/vc/include/EGL/eglext_brcm.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofOpenALSoundPlayer.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofThread.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fft.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fftr.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fft.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofLog.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofFileUtils.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/common.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/setup.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../simd/platform.h \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/precision.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_int.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_fixes.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_vectorize.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../fwd.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.inl \
- /home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common_simd.inl
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/math/ofMath.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/constants.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/../detail/setup.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/../detail/../simd/platform.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/constants.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/fwd.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_int.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_float.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/precision.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_mat.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofUtils.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/checked.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/core.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/unchecked.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofAppRunner.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofWindowSettings.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/vec2.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofMainLoop.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEvents.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEventUtils.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEvent.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofTimer.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFpsCounter.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/types/ofRectangle.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/vec3.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.hpp \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.inl \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofLog.h \
+ /home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h \
+ /usr/include/rtaudio/RtAudio.h
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundPlayer.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofRtAudioSoundStream.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofConstants.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofConstants.h:
 
 /opt/vc/include/bcm_host.h:
 
@@ -274,72 +276,76 @@
 
 /opt/vc/include/EGL/eglext_brcm.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/tess2/include/tesselator.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/tess2/include/tesselator.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBaseTypes.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/sound/ofOpenALSoundPlayer.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/sound/ofSoundBuffer.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofThread.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/math/ofMath.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fft.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/constants.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fftr.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/../detail/setup.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/kiss/include/kiss_fft.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/../detail/../simd/platform.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofLog.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/gtc/constants.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/openFrameworks/utils/ofFileUtils.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/fwd.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/common.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_int.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_float.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/setup.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../simd/platform.h:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/precision.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/precision.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_mat.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_int.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofUtils.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_fixes.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/checked.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/core.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/utf8/include/utf8/unchecked.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_vector_relational_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofAppRunner.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofWindowSettings.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/vec2.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec2.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec2.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec3.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/app/ofMainLoop.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEvents.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEventUtils.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec4_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/events/ofEvent.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/_vectorize.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofTimer.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFpsCounter.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../fwd.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/types/ofRectangle.h:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_float.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/vec3.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/../detail/type_mat.hpp:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.hpp:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/type_vec1.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/glm/include/glm/detail/type_vec3.inl:
 
-/home/pi/MicroWrave/video/software/opeFrameworks/libs/glm/include/glm/detail/func_common_simd.inl:
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofLog.h:
+
+/home/pi/MicroWrave/video/software/openFrameworks/libs/openFrameworks/utils/ofFileUtils.h:
+
+/usr/include/rtaudio/RtAudio.h:
