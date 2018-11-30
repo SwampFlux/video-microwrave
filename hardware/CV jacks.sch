@@ -72,8 +72,6 @@ F 3 "" H 2200 1350 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 1200 2100 1350
-Wire Wire Line
 	2100 1350 2200 1350
 $Comp
 L PJ301M-12 J502
@@ -101,8 +99,6 @@ F 3 "" H 2200 2050 50  0000 C CNN
 	1    2200 2050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2100 1900 2100 2050
 Wire Wire Line
 	2100 2050 2200 2050
 $Comp
@@ -132,8 +128,6 @@ F 3 "" H 2200 2750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 2600 2100 2750
-Wire Wire Line
 	2100 2750 2200 2750
 $Comp
 L PJ301M-12 J504
@@ -161,8 +155,6 @@ F 3 "" H 2200 3450 50  0000 C CNN
 	1    2200 3450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2100 3300 2100 3450
 Wire Wire Line
 	2100 3450 2200 3450
 $Comp
@@ -192,8 +184,6 @@ F 3 "" H 2200 4150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 4000 2100 4150
-Wire Wire Line
 	2100 4150 2200 4150
 $Comp
 L PJ301M-12 J506
@@ -221,8 +211,6 @@ F 3 "" H 2200 4850 50  0000 C CNN
 	1    2200 4850
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2100 4700 2100 4850
 Wire Wire Line
 	2100 4850 2200 4850
 $Comp
@@ -252,8 +240,6 @@ F 3 "" H 2200 5550 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 5400 2100 5550
-Wire Wire Line
 	2100 5550 2200 5550
 $Comp
 L PJ301M-12 J508
@@ -282,7 +268,78 @@ F 3 "" H 2200 6250 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2100 6100 2100 6250
-Wire Wire Line
 	2100 6250 2200 6250
+$Comp
+L CONN_02X05 EXPANDER501
+U 1 1 5C0083CE
+P 4700 3550
+F 0 "EXPANDER501" H 4700 3850 50  0000 C CNN
+F 1 "CONN_02X05" H 4700 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 4700 2350 50  0001 C CNN
+F 3 "" H 4700 2350 50  0000 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3350 2    60   ~ 0
+expansion1
+Text Label 4450 3450 2    60   ~ 0
+expansion2
+Text Label 4450 3550 2    60   ~ 0
+expansion3
+Text Label 4450 3650 2    60   ~ 0
+expansion4
+Text Label 4950 3650 0    60   ~ 0
+expansion5
+Text Label 4950 3550 0    60   ~ 0
+expansion6
+Text Label 4950 3450 0    60   ~ 0
+expansion7
+Text Label 4950 3350 0    60   ~ 0
+expansion8
+Text Label 2800 1200 0    60   ~ 0
+expansion1
+Wire Wire Line
+	2100 1200 2800 1200
+Wire Wire Line
+	2100 1900 2800 1900
+Text Label 2800 1900 0    60   ~ 0
+expansion2
+Text Label 2800 2600 0    60   ~ 0
+expansion3
+Text Label 2800 3300 0    60   ~ 0
+expansion4
+Text Label 2800 4000 0    60   ~ 0
+expansion5
+Text Label 2800 4700 0    60   ~ 0
+expansion6
+Text Label 2800 5400 0    60   ~ 0
+expansion7
+Text Label 2800 6100 0    60   ~ 0
+expansion8
+Wire Wire Line
+	2100 2600 2800 2600
+Wire Wire Line
+	2100 3300 2800 3300
+Wire Wire Line
+	2100 4000 2800 4000
+Wire Wire Line
+	2100 4700 2800 4700
+Wire Wire Line
+	2100 5400 2800 5400
+Wire Wire Line
+	2100 6100 2800 6100
+$Comp
+L Earth #PWR062
+U 1 1 5C008C4D
+P 3950 3750
+F 0 "#PWR062" H 3950 3500 50  0001 C CNN
+F 1 "Earth" H 3950 3600 50  0001 C CNN
+F 2 "" H 3950 3750 50  0000 C CNN
+F 3 "" H 3950 3750 50  0000 C CNN
+	1    3950 3750
+	0    1    1    0   
+$EndComp
+NoConn ~ 4950 3750
+Wire Wire Line
+	4450 3750 3950 3750
 $EndSCHEMATC
