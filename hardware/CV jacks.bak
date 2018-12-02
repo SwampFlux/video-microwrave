@@ -280,21 +280,21 @@ F 3 "" H 4700 2350 50  0000 C CNN
 	1    4700 3550
 	1    0    0    -1  
 $EndComp
-Text Label 4450 3650 2    60   ~ 0
-expansion1
-Text Label 4450 3550 2    60   ~ 0
-expansion2
-Text Label 4450 3450 2    60   ~ 0
-expansion3
 Text Label 4450 3350 2    60   ~ 0
+expansion1
+Text Label 4450 3450 2    60   ~ 0
+expansion2
+Text Label 4450 3550 2    60   ~ 0
+expansion3
+Text Label 4450 3650 2    60   ~ 0
 expansion4
-Text Label 4950 3350 0    60   ~ 0
-expansion5
-Text Label 4950 3450 0    60   ~ 0
-expansion6
-Text Label 4950 3550 0    60   ~ 0
-expansion7
 Text Label 4950 3650 0    60   ~ 0
+expansion5
+Text Label 4950 3550 0    60   ~ 0
+expansion6
+Text Label 4950 3450 0    60   ~ 0
+expansion7
+Text Label 4950 3350 0    60   ~ 0
 expansion8
 Text Label 2800 1200 0    60   ~ 0
 expansion1
@@ -331,15 +331,15 @@ Wire Wire Line
 $Comp
 L Earth #PWR062
 U 1 1 5C008C4D
-P 5400 3750
-F 0 "#PWR062" H 5400 3500 50  0001 C CNN
-F 1 "Earth" H 5400 3600 50  0001 C CNN
-F 2 "" H 5400 3750 50  0000 C CNN
-F 3 "" H 5400 3750 50  0000 C CNN
-	1    5400 3750
-	0    -1   -1   0   
+P 3950 3750
+F 0 "#PWR062" H 3950 3500 50  0001 C CNN
+F 1 "Earth" H 3950 3600 50  0001 C CNN
+F 2 "" H 3950 3750 50  0000 C CNN
+F 3 "" H 3950 3750 50  0000 C CNN
+	1    3950 3750
+	0    1    1    0   
 $EndComp
+NoConn ~ 4950 3750
 Wire Wire Line
-	4950 3750 5400 3750
-NoConn ~ 4450 3750
+	4450 3750 3950 3750
 $EndSCHEMATC
