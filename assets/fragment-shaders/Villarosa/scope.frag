@@ -4,30 +4,30 @@ precision mediump float;
 
 uniform vec2 u_resolution;
 uniform float u_time;
-uniform float u_analog0;
-uniform float u_analog1;
-uniform float u_analog2;
-uniform float u_analog3;
-uniform float u_analog4;
-uniform float u_analog5;
-uniform float u_analog6;
-uniform float u_analog7;
+uniform float cv1_raw;
+uniform float cv2_raw;
+uniform float cv3_raw;
+uniform float cv4_raw;
+uniform float cv5_raw;
+uniform float cv6_raw;
+uniform float cv7_raw;
+uniform float cv8_raw;
 
 void main() {
   vec2 st = gl_FragCoord.xy / u_resolution;
 
   int col = int(st.x * 9.0);
 
-  float value = mod(u_time / 10.0, 1.0);
+  float value_uni = mod(u_time / 10.0, 1.0);
 
-  if(col == 0) { value = u_analog0; }
-  if(col == 1) { value = u_analog1; }
-  if(col == 2) { value = u_analog2; }
-  if(col == 3) { value = u_analog3; }
-  if(col == 4) { value = u_analog4; }
-  if(col == 5) { value = u_analog5; }
-  if(col == 6) { value = u_analog6; }
-  if(col == 7) { value = u_analog7; }
+  if(col == 0) { value = cv1; }
+  if(col == 1) { value = cv2; }
+  if(col == 2) { value = cv3; }
+  if(col == 3) { value = cv4; }
+  if(col == 4) { value = cv5; }
+  if(col == 5) { value = cv6; }
+  if(col == 6) { value = cv7; }
+  if(col == 7) { value = cv8; }
 
   float color = step(0.5 - value, 0.5 - st.y);
   gl_FragColor = vec4(color, color, color, 1.);
