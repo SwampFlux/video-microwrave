@@ -15,9 +15,14 @@ uniform float u_analog5;
 uniform float u_analog6;
 uniform float u_analog7;
 
-uniform float cv1_uni;
-uniform float cv1_time;
-uniform float cv2_time;
+uniform vec3 cv1;
+uniform vec3 cv2;
+uniform vec3 cv3;
+uniform vec3 cv4;
+uniform vec3 cv5;
+uniform vec3 cv6;
+uniform vec3 cv7;
+uniform vec3 cv8;
 
 const float PI = 3.1415926535;
 //const float flipTime  = 10.;
@@ -55,7 +60,7 @@ float circle(in vec2 _st, in vec2 pos, in float _radius){
 
 vec3 gilmoreCol(float x){
   //offset hue to put red in middle
-  float hue = fract((u_analog5 - x) - 0.45);
+  float hue = fract((cv5.z/5. - x) - 0.45);
   //saturation is higher for warmer colors
   float sat = 0.3 + sin(x*PI)*0.5;
   //brightness higher in middle
@@ -72,7 +77,7 @@ void main(void)
   vec2 uvs = vec2( gl_FragCoord.st - 0.5*u_resolution.xy ) / min(u_resolution.x,u_resolution.y);
 
   //switch tileDims every 2 seconds
-  float flipTime = 30.0 * u_analog4;
+  float flipTime = 30.0 * cv4.z;
   float rndTime = randomRange(vec2(floor(flipTime), 79834.345),3.,16.);
 
   //number of rows ,columns
@@ -82,13 +87,13 @@ void main(void)
 
   //rotate
   //uvs = rotate2D(uvs,cos(u_time / 10.));
-  uvs = rotate2D(uvs, (1.0-cv1_time) / 50.0);
+  uvs = rotate2D(uvs, (1.0-cv1.z) / 7.0);
 
   //warp
   //uvs.x = uvs.x + sin(uvs.x*4.+iTime*6.)*0.005;
 
   //zoomer
-  //uvs *= (cos(iTime/2.) *0.2 + 1.);
+  uvs *= (cv6.x * 5.0);
 
   //slide columns down separately
   //tile H coord 
@@ -96,7 +101,7 @@ void main(void)
   //rand per column
   float rndColumn = random(vec2(colId, 687.890));
 //  uvs.y += u_time * rndColumn / 30.;
-  uvs.y += cv2_time / 10. * rndColumn * 2.;
+  uvs.y += cv2.z / 40. * rndColumn * 2.;
 
   //bounce
   //uvs.y += cos(iTime*PI * rndColumn)/10.;
@@ -121,11 +126,11 @@ void main(void)
   vec2 st = fract(uvs * tileDims);
 
   //flip tiles
-  if(tileRnd == 1.){
+  if(cv3.x - tileRnd == 1.){
     st.y = 1.0 - st.y;
-  }else if(tileRnd == 2.){
+  }else if(cv3.x - tileRnd == 2.){
     st.x = 1.0 - st.x;
-  }else if(u_analog3 > 0.5){
+  }else if(cv3.x - tileRnd > 0.5){
     st.x = 1.0 - st.x;
     st.y = 1.0 - st.y;
   }

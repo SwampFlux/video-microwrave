@@ -7,10 +7,10 @@
 uniform sampler2D u_backbuffer;
 uniform vec2 u_resolution;
 uniform float u_time;
-uniform float u_analog0;
-uniform float u_analog1;
-uniform float u_analog2;
-uniform float u_analog3;
+uniform float cv1_bi;
+uniform float cv2_bi;
+uniform float cv3_bi;
+uniform float cv4_bi;
 
 vec4 sigmoid(vec4 x) {
   return x / (1.0 + abs(x));
@@ -27,7 +27,7 @@ void main() {
   vec2 pixel = 1.0 / u_resolution;.xy
   vec2 uv = st + pixel / 2.0;
 
-  vec2 slip = vec2(u_analog0, u_analog1);
+  vec2 slip = vec2(cv2_bi, cv3_bi);
 
   vec4 color = texture2D(u_backbuffer, uv);
   color = -1.0 + 2.0 * texture2D(u_backbuffer, uv + t0 * slip * color.rg);

@@ -1,4 +1,4 @@
-// 15
+// 13
 
 #define PI 3.14
 
@@ -34,20 +34,6 @@ float stroke(float x, float s, float w) {
   return clamp(d, 0., 1.);
 }
 
-//14
-float vesicaSDF(vec2 st, float w) {
-  vec2 offset = vec2(w * .5, 0.);
-  return max(circleSDF(st-offset),
-             circleSDF(st+offset));
-}
-
-//15
-#define triSlope (PI / 4.0)
-float triSDF(vec2 st) {
-  st = (st * 2. - 1.) * 2.;
-  return max(abs(st.x) * triSlope + st.y * 0.5, -st.y * 0.5);
-}
-
 void main() {
   vec2 st = gl_FragCoord.xy / u_resolution.xy;
 
@@ -61,17 +47,14 @@ void main() {
   //color += fill(circleSDF(st), .65);
   vec2 offset = vec2(.1,.0);
   //color -= fill(circleSDF(st-offset),.5);
-  //float left = circleSDF(st+offset);
-  //float right= circleSDF(st-offset);
+  float left = circleSDF(st+offset);
+  float right= circleSDF(st-offset);
   //float rect = rectSDF(st, vec2(.5,1.));
   //float diag = (st.x+st.y) * .5;
-  st.y = 1. - st.y;
-  //color += flip(
-  //  fill(sdf,.5),
-  //  step(diag,.5));
-  vec2 ts = vec2(st.x,.82-st.y);
-  color += fill(triSDF(st),.7);
-  color -= fill(triSDF(ts),.36);
+  color += flip(
+    stroke(left, .5, .05),
+    fill(right, .525)
+  );
   gl_FragColor = vec4(color,1.);
 }
 
