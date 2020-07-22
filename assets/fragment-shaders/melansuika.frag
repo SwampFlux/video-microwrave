@@ -3,7 +3,7 @@
 uniform vec2 u_resolution;
 uniform float u_time;
 
-uniform float time1_x;
+uniform vec3 cv1;
 
 float circle (in vec2 _st, in vec2 pos, in float _radius) {
   float edge = 20.0 / u_resolution.x;
@@ -17,7 +17,7 @@ void main() {
   vec2 screenSpace = gl_FragCoord.xy / u_resolution.xy;
 
   float breaker = 0.2;
-  float gridSize = 6.0 + 6.0 * time1_x;
+  float gridSize = 6.0 + 6.0 * cv1.z;
 
   vec3 color = vec3(0.0);
   float x = step(breaker, mod(screenSpace.x * gridSize, 1.0));
