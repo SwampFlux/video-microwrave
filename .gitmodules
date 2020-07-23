@@ -1,0 +1,8 @@
+[submodule "includes/oscpack"]
+	path = includes/oscpack
+	url = https://github.com/RossBencina/oscpack.git
+
+[submodule "includes/ABElectronics_CPP"]
+	path = includes/ABElectronics_CPP
+	url = https://github.com/abelectronicsuk/ABElectronics_CPP_Libraries.git
+

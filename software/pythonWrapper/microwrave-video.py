@@ -35,18 +35,19 @@ def cvToOSC(channel):
     cv_uni = (5.0 - cv) / 5.0
     cv_bi = (2.5 - cv) / 2.5
     cv_time[channel-1] = cv_time[channel-1] + cv_bi
-    client.send_message("/cv" + str(channel), [cv_uni, cv_bi, cv_time[channel-1]]) 
+    #client.send_message("/cv" + str(channel), [cv_uni, cv_bi, cv_time[channel-1]]) 
+    client.send_message("/cv" + str(channel), cv_time[channel-1]) 
     keepAlive = channel==7 and cv < 2.5
 
 #viewer = GlslViewer('../../assets/fragment-shaders/melansuika.frag', {'livecode':True, 'osc_port':8000})
-viewer = GlslViewer('../../assets/fragment-shaders/melansuika.frag', {'osc_port':8000})
+viewer = GlslViewer('../../assets/fragment-shaders/melansuika.frag', {'osc_port':8000, 'livecode':True})
 
 if keepAlive:
     viewer.start()
     while keepAlive:
         for channel in range(8):
-            cv = cvToOSC(channel)
-else:
-    viewer.stop()
-    sys.exit()
+            cv = cvToOSC(channel+1)
+
+viewer.stop()
+sys.exit()
 
