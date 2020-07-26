@@ -1,63 +1,51 @@
-EXE = ./bin/microwrave
+DIR				= ./bin/
+BIN				= video-microwrave
 
-CXX = g++
-SOURCES := $(wildcard include/*/*.cc) $(wildcard src/*.cpp) $(wildcard src/*/*.cpp)
-HEADERS := $(wildcard include/*/*.h) $(wildcard src/*.h) $(wildcard src/*.h) $(wildcard src/*/*.h)
-OBJECTS := $(SOURCES:.cpp=.o)
+HEADERS		:= include/oscpack/ip/*.h \
+						 include/oscpack/osc/*.h \
+						 include/ABElectronics_CPP/ADCPi/*.h
 
-PLATFORM = $(shell uname)
-ifneq ("$(wildcard /etc/os-release)","")
-PLATFORM = $(shell . /etc/os-release && echo $$NAME)
-endif
+SOURCES		:= src/*.cpp \
+					   include/oscpack/ip/posix/*.cpp \
+					   include/oscpack/osc/*.cpp \
+					   include/ABElectronics_CPP/ADCPi/*.cpp
 
-#override platform selection on RPi:
-ifneq ("$(wildcard /opt/vc/include/bcm_host.h)","")
-    PLATFORM = Raspbian GNU/Linux
-endif
+INCLUDES	:= -I ./include/
 
-#$(info Platform ${PLATFORM})
+OBJECTS		:= $(SOURCES: .cpp = .o)
 
-INCLUDES +=	-Isrc/ -Iinclude/
-CFLAGS += -Wall -O3 -std=c++11 -fpermissive 
-#CFLAGS += -Wall -O3 -std=c++11 -fpermissive -lwiringPi
 
-ifeq ($(PLATFORM),Raspbian GNU/Linux)
-CFLAGS += -DGLM_FORCE_CXX98 -DPLATFORM_RPI
-INCLUDES += -I$(SDKSTAGE)/opt/vc/include/ \
-			-I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads \
-			-I$(SDKSTAGE)/opt/vc/include/interface/vmcs_host/linux
-LDFLAGS += -L$(SDKSTAGE)/opt/vc/lib/ \
-			-lGLESv2 -lEGL \
-			-lbcm_host \
-			-lpthread
 
-else ifeq ($(shell uname),Linux)
-CFLAGS += -DPLATFORM_LINUX $(shell pkg-config --cflags glfw3 glu gl)
-LDFLAGS += $(shell pkg-config --libs glfw3 glu gl x11 xrandr xi xxf86vm xcursor xinerama xrender xext xdamage) -lpthread -ldl
+CXX				= g++ -g
 
-else ifeq ($(PLATFORM),Darwin)
-CXX = /usr/bin/clang++
-ARCH = -arch x86_64
-CFLAGS += $(ARCH) -DPLATFORM_OSX -stdlib=libc++ $(shell pkg-config --cflags glfw3)
-INCLUDES += -I/Library/Frameworks/GLUI.framework
-LDFLAGS += $(ARCH) -framework OpenGL -framework Cocoa -framework CoreVideo -framework IOKit $(shell pkg-config --libs glfw3)
+ENDIANESS=OSC_DETECT_ENDIANESS #source code will detect using preprocessor
+ 
+CXXFLAGS	:= $(INCLUDES) \
+						-W -Wall -Wextra \
+						-Wno-deprrecated-declarations \
+						-D$(ENDIANESS)
 
-endif
 
-all: $(EXE)
+GREEN			:= \033[1;32m
+WHITE			:= \033[0;m
 
-%.o: %.cpp
-	@echo $@
-	$(CXX) $(CFLAGS) $(INCLUDES) -g -c $< -o $@ -Wno-deprecated-declarations
+.PHONY: all clean install
 
-$(EXE): $(OBJECTS) $(HEADERS)
-	$(CXX) $(CFLAGS) $(OBJECTS) $(LDFLAGS) -rdynamic -o $@
+all: build
+
+build:		$(OBJECTS) $(HEADERS)
+					@echo "ENDIANESS" $(ENDIANESS)
+					@$(CXX) $(OBJECTS) -o $(DIR)$(BIN) $(LDFLAGS)
+					@printf "\n[$(GREEN)OK$(WHITE)] Binary: $(DIR)$(BIN)\n"
+					@echo "-----------------\n"
+
+%.o:			%.cpp
+					@$(CXX) $(CXXFLAGS) -c $< -o $@ 
+					@printf "[$(GREEN)OK$(WHITE)] $<\n"
 
 clean:
-	@rm -rvf $(EXE) src/*.o src/*/*.o include/*/*.o *.dSYM
+					@rm -rvf $(DIR)$(BIN) src/*.o src/**/*.o include/**/*.o
 
 install:
-	@cp $(EXE) /usr/local/bin
+					@cp $(DIR)$(BIN) /usr/local/bin
 
-uninstall:
-	@rm /usr/local/$(EXE)
