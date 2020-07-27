@@ -11,11 +11,11 @@
 #include <iostream>
 #include <ctime>
 
-//#include "../includes/ABElectronics_CPP/ADCPi/ABE_ADCPi.h"
-#include "adc.h"
+#include "../include/ABElectronics_CPP/ADCPi/ABE_ADCPi.h"
+//#include "adc.h"
 
-#include "../includes/oscpack/osc/OscOutboundPacketStream.h"
-#include "../includes/oscpack/ip/UdpSocket.h"
+#include "../include/oscpack/osc/OscOutboundPacketStream.h"
+#include "../include/oscpack/ip/UdpSocket.h"
 
 #define ADDRESS "127.0.0.1"
 #define PORT 8000
@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
 
       p << osc::BeginBundleImmediate
         << osc::BeginMessage(path_char) 
-        << uni << bi << timer[channel-1] << osc::EndMessage;
+        << uni << bi << timer[channel-1] << osc::EndMessage
         << osc::EndBundle;
       printf("Pin %i: %G \n", channel, adc.read_voltage(1));
     }

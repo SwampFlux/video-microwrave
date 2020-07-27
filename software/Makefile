@@ -1,19 +1,24 @@
-DIR				= ./bin/
-BIN				= video-microwrave
+DIR				= bin
+APP				:= $(DIR)/video-microwrave
 
-HEADERS		:= include/oscpack/ip/*.h \
-						 include/oscpack/osc/*.h \
-						 include/ABElectronics_CPP/ADCPi/*.h
+HEADERS		:= include/ABElectronics_CPP/ADCPi/*.h \
+#					include/oscpack/ip/*.h \
+					include/oscpack/osc/*.h \
 
 SOURCES		:= src/*.cpp \
-					   include/oscpack/ip/posix/*.cpp \
-					   include/oscpack/osc/*.cpp \
-					   include/ABElectronics_CPP/ADCPi/*.cpp
+				  include/ABElectronics_CPP/ADCPi/*.cpp \
+#					include/oscpack/ip/*.cpp \
+					include/oscpack/ip/posix/*.cpp \
+				  include/oscpack/osc/*.cpp \
 
 INCLUDES	:= -I ./include/
+#					-I ./include/oscpack/osc/ \
+					-I ./include/oscpack/ip/ \
+					-I ./ABElectronics_CPP/ADCPi/ \
+#					-I ./src/
 
-OBJECTS		:= $(SOURCES: .cpp = .o)
-
+OBJECTS		:= $(SOURCES:.cpp=.o)
+#					include/oscpack/ip/*.o
 
 
 CXX				= g++ -g
@@ -23,29 +28,41 @@ ENDIANESS=OSC_DETECT_ENDIANESS #source code will detect using preprocessor
 CXXFLAGS	:= $(INCLUDES) \
 						-W -Wall -Wextra \
 						-Wno-deprrecated-declarations \
-						-D$(ENDIANESS)
+						-D$(ENDIANESS) \
+						-DPLATFORM_RPI \
+						-Wno-psabi
 
 
 GREEN			:= \033[1;32m
 WHITE			:= \033[0;m
 
-.PHONY: all clean install
+.PHONY: all clean install uninstall
 
-all: build
+all: $(APP)
 
-build:		$(OBJECTS) $(HEADERS)
-					@echo "ENDIANESS" $(ENDIANESS)
-					@$(CXX) $(OBJECTS) -o $(DIR)$(BIN) $(LDFLAGS)
-					@printf "\n[$(GREEN)OK$(WHITE)] Binary: $(DIR)$(BIN)\n"
-					@echo "-----------------\n"
+$(DIR):
+					mkdir $@
+
+$(LIBFILENAME): $(LIBOBJECTS)
+	#GNU/Linux case
+	$(CXX) -shared -Wl,-soname,$(LIBSONAME) -o $(LIBFILENAME) $(LIBOBJECTS) -lc
+
+
+$(APP):		$(OBJECTS) $(HEADERS) | $(DIR)
+					echo "ENDIANESS" $(ENDIANESS)
+					$(CXX) $(CXXFLAGS) $(OBJECTS) $(LDFLAGS) -rdynamic -o $@
+					printf "\n[$(GREEN)OK$(WHITE)] Binary: $(APP)\n"
+					echo "-----------------\n"
 
 %.o:			%.cpp
-					@$(CXX) $(CXXFLAGS) -c $< -o $@ 
-					@printf "[$(GREEN)OK$(WHITE)] $<\n"
+					$(CXX) $(CXXFLAGS) -c $< -o $@ 
+					printf "[$(GREEN)OK$(WHITE)] $<\n"
 
 clean:
-					@rm -rvf $(DIR)$(BIN) src/*.o src/**/*.o include/**/*.o
+					rm -rvf $(APP) src/*.o src/*/*.o include/*/*.o include/*/*/*.o include/*/*/*/*.o
 
 install:
-					@cp $(DIR)$(BIN) /usr/local/bin
+					cp $(APP) /usr/local/bin
 
+uninstall:
+					rm 
