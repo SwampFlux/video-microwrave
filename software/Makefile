@@ -13,13 +13,14 @@ SOURCES		:= src/*.cpp \
 
 INCLUDES	:= \
 					-I ./ABElectronics_CPP/ADCPi/ \
-					-I ./include/oscpack/osc/ \
-					-I ./include/oscpack/ip/ \
+					-I ./include/oscpack/ \
 					-I ./src/
 
 OBJECTS		:= $(SOURCES:.cpp=.o) \
 #					include/oscpack/ip/*.o
 
+
+LDFLAGS		:= -L ./include/oscpack/oscpack/lib -l oscpack
 
 CXX				= g++ -g
 
@@ -49,7 +50,7 @@ $(LIBFILENAME): $(LIBOBJECTS)
 
 
 $(APP):		$(OBJECTS) $(HEADERS) | $(DIR)
-					$(CXX) $(CXXFLAGS) $(OBJECTS) $(LDFLAGS) -rdynamic -o $@
+					$(CXX) $(CXXFLAGS) $(LDFLAGS) -rdynamic -o $@
 					printf "\n[$(GREEN)OK$(WHITE)] Binary: $(APP)\n"
 					echo "-----------------\n"
 
