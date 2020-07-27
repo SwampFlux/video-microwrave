@@ -2,22 +2,22 @@ DIR				= bin
 APP				:= $(DIR)/video-microwrave
 
 HEADERS		:= include/ABElectronics_CPP/ADCPi/*.h \
-#					include/oscpack/ip/*.h \
+					include/oscpack/ip/*.h \
 					include/oscpack/osc/*.h \
 
 SOURCES		:= src/*.cpp \
 				  include/ABElectronics_CPP/ADCPi/*.cpp \
-#					include/oscpack/ip/*.cpp \
-					include/oscpack/ip/posix/*.cpp \
+					include/oscpack/ip/*.cpp \
 				  include/oscpack/osc/*.cpp \
+					include/oscpack/ip/posix/*.cpp \
 
-INCLUDES	:= -I ./include/
-#					-I ./include/oscpack/osc/ \
-					-I ./include/oscpack/ip/ \
+INCLUDES	:= \
 					-I ./ABElectronics_CPP/ADCPi/ \
-#					-I ./src/
+					-I ./include/oscpack/osc/ \
+					-I ./include/oscpack/ip/ \
+					-I ./src/
 
-OBJECTS		:= $(SOURCES:.cpp=.o)
+OBJECTS		:= $(SOURCES:.cpp=.o) \
 #					include/oscpack/ip/*.o
 
 
@@ -49,7 +49,6 @@ $(LIBFILENAME): $(LIBOBJECTS)
 
 
 $(APP):		$(OBJECTS) $(HEADERS) | $(DIR)
-					echo "ENDIANESS" $(ENDIANESS)
 					$(CXX) $(CXXFLAGS) $(OBJECTS) $(LDFLAGS) -rdynamic -o $@
 					printf "\n[$(GREEN)OK$(WHITE)] Binary: $(APP)\n"
 					echo "-----------------\n"
