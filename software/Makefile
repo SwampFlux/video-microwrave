@@ -50,7 +50,7 @@ $(LIBFILENAME): $(LIBOBJECTS)
 
 
 $(APP):		$(OBJECTS) $(HEADERS) | $(DIR)
-					$(CXX) $(CXXFLAGS) $(LDFLAGS) -rdynamic -o $@
+					$(CXX) $(CXXFLAGS) $(LDFLAGS) include/ABElectronics_CPP/ADCPi/ABE_ADCPi.cpp src/main.cpp -rdynamic -o $@
 					printf "\n[$(GREEN)OK$(WHITE)] Binary: $(APP)\n"
 					echo "-----------------\n"
 
