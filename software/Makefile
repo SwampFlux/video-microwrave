@@ -28,7 +28,7 @@ ENDIANESS=OSC_DETECT_ENDIANESS #source code will detect using preprocessor
  
 CXXFLAGS	:= $(INCLUDES) \
 						-W -Wall -Wextra \
-						-Wno-deprrecated-declarations \
+						-Wno-deprecated-declarations \
 						-D$(ENDIANESS) \
 						-DPLATFORM_RPI \
 						-Wno-psabi

@@ -9,7 +9,9 @@
 #include <time.h>
 #include <unistd.h>
 #include <iostream>
-#include <ctime>
+//#include <ctime>
+#include <chrono>
+
 
 #include "../include/ABElectronics_CPP/ADCPi/ABE_ADCPi.h"
 //#include "adc.h"
@@ -22,6 +24,7 @@
 #define OUTPUT_BUFFER_SIZE 1024 // example used 1024?
 
 using namespace std;
+using namespace std::chrono;
 using namespace ABElectronics_CPP_Libraries;
 
 void clearscreen () {
@@ -40,33 +43,42 @@ int main(int argc, char **argv) {
   char buffer[OUTPUT_BUFFER_SIZE];
   osc::OutboundPacketStream p(buffer, OUTPUT_BUFFER_SIZE);
 
-  int prev_time = time(nullptr);
+  typedef std::chrono::duration<float> floatseconds;
+  float timer[8] = {0,0,0,0,0,0,0,0};
 
-  int timer[8] = {0,0,0,0,0,0,0,0};
+//  typedef std::chrono::milliseconds millis;
+
+  milliseconds prev_time = duration_cast<milliseconds>(steady_clock::now().time_since_epoch());
 
   while(1) {
-    clearscreen();
-    for(int channel=1; channel<=8; channel++){
+//    clearscreen();
+    p << osc::BeginBundleImmediate;
+    for(int channel=1; channel<=1; channel++){
       double cv = adc.read_voltage(channel);
-      double uni = (5.0 - cv) / 5.0;
-      double bi = uni * 2 - 1;
+      float uni = (5.0 - cv) / 5.0;
+      float bi = uni * 2 - 1;
 
-      int now = time(nullptr);
-      timer[channel-1] += (now - prev_time) * bi;
+      milliseconds now = duration_cast<milliseconds>(steady_clock::now().time_since_epoch());
+      floatseconds delta = (now - prev_time); 
+      timer[channel-1] += delta.count() * bi;
       prev_time = now;
 
       std::string path = "/cv" + std::to_string(channel);
       char const *path_char = path.c_str();
 
-      p << osc::BeginBundleImmediate
-        << osc::BeginMessage(path_char) 
-        << uni << bi << timer[channel-1] << osc::EndMessage
-        << osc::EndBundle;
-      printf("Pin %i: %G \n", channel, adc.read_voltage(1));
+      p << osc::BeginMessage(path_char)
+        << (float)uni
+        << (float)bi
+        << (float)timer[channel-1]
+        << osc::EndMessage;
+
+      printf("Pin %i:\t%f\t%f\t%f\n", channel, uni, bi, timer[channel-1]);
     }
-    
+    p << osc::EndBundle;
+    //osc::CheckForAvailableMessageSpace("cv1");
     transmitSocket.Send( p.Data(), p.Size() );
-//    usleep(100000);
+    p.Clear();
+ //   usleep(100000);
   }
 
   (void)argc;
