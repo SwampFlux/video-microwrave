@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
   while(1) {
 //    clearscreen();
     p << osc::BeginBundleImmediate;
-    for(int channel=1; channel<=1; channel++){
+    for(int channel=1; channel<=4; channel++){
       double cv = adc.read_voltage(channel);
       float uni = (5.0 - cv) / 5.0;
       float bi = uni * 2 - 1;
@@ -67,12 +67,12 @@ int main(int argc, char **argv) {
       char const *path_char = path.c_str();
 
       p << osc::BeginMessage(path_char)
-        << (float)uni
+//        << (float)uni
         << (float)bi
         << (float)timer[channel-1]
         << osc::EndMessage;
 
-      printf("Pin %i:\t%f\t%f\t%f\n", channel, uni, bi, timer[channel-1]);
+//      printf("Pin %i:\t%f\t%f\t%f\n", channel, uni, bi, timer[channel-1]);
     }
     p << osc::EndBundle;
     //osc::CheckForAvailableMessageSpace("cv1");

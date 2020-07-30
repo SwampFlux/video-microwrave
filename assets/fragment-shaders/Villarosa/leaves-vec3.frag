@@ -15,7 +15,7 @@ uniform float u_analog5;
 uniform float u_analog6;
 uniform float u_analog7;
 
-uniform vec3 cv1;
+uniform vec2 cv1;
 
 const float PI = 3.1415926535;
 //const float flipTime  = 10.;
@@ -53,7 +53,7 @@ float circle(in vec2 _st, in vec2 pos, in float _radius){
 
 vec3 gilmoreCol(float x){
   //offset hue to put red in middle
-  float hue = fract((cv1.x - x) - 0.45);
+  float hue = fract((cv1.y - x) - 0.45);
   //saturation is higher for warmer colors
   float sat = 0.3 + sin(x*PI)*0.5;
   //brightness higher in middle

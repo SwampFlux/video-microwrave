@@ -4,7 +4,7 @@ precision mediump float;
 
 uniform vec2 u_resolution;
 uniform float u_time;
-uniform float cv1_uni; // zero to 1
+uniform vec3 cv1; // zero to 1
 uniform float cv1_bi; // negative to positive 1
 uniform float cv1_time; // time that increments at variable speed
 
@@ -18,7 +18,7 @@ void main() {
 
 //  vec3 values = vec3(cv1_uni, cv1_bi, cv1_time,
 
-  if(column == 0) { value = cv1_uni; }
+  if(column == 0) { value = cv1.x; }
   if(column == 1) { value = cv1_bi; }
   if(column == 2) { value = mod(cv1_time / 100., 1.0); }
 /*  if(col == 4) { value = cv5; }
