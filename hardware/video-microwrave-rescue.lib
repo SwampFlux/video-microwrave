@@ -1,157 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Analog_ADC_MCP3008
+# C
 #
-DEF Analog_ADC_MCP3008 U 0 40 Y Y 1 F N
-F0 "U" -200 525 50 H V R CNN
-F1 "Analog_ADC_MCP3008" -200 450 50 H V R CNN
-F2 "" 100 100 50 H I C CNN
-F3 "" 100 100 50 H I C CNN
-ALIAS MCP3008
-$FPLIST
- DIP*W7.62mm*
- SOIC*3.9x9.9mm*P1.27mm*
-$ENDFPLIST
-DRAW
-T 0 -25 50 50 0 0 0 ADC Normal 0 C C
-T 900 235 -115 50 0 0 0 CNTRL Normal 0 L B
-T 900 -250 -50 50 0 0 0 MUX Normal 0 C C
-S 150 -150 275 150 0 1 0 N
-S 500 -500 -500 400 0 1 10 f
-P 2 0 1 0 -150 50 -200 50 N
-P 2 0 1 0 75 50 150 50 N
-P 5 0 1 0 -300 350 -300 -450 -200 -400 -200 300 -300 350 N
-P 5 0 1 0 150 -125 -150 -125 -150 -450 -250 -450 -250 -425 N
-P 6 0 1 0 75 125 75 -25 -100 -25 -150 50 -100 125 75 125 N
-X CH0 1 -600 300 100 R 50 50 1 1 I
-X ~CS~/SHDN 10 600 -200 100 L 50 50 1 1 I
-X Din 11 600 -100 100 L 50 50 1 1 I
-X Dout 12 600 0 100 L 50 50 1 1 O
-X CLK 13 600 100 100 L 50 50 1 1 I C
-X AGND 14 -100 -600 100 U 50 50 1 1 W
-X Vref 15 -100 500 100 D 50 50 1 1 W
-X Vdd 16 200 500 100 D 50 50 1 1 W
-X CH1 2 -600 200 100 R 50 50 1 1 I
-X CH2 3 -600 100 100 R 50 50 1 1 I
-X CH3 4 -600 0 100 R 50 50 1 1 I
-X CH4 5 -600 -100 100 R 50 50 1 1 I
-X CH5 6 -600 -200 100 R 50 50 1 1 I
-X CH6 7 -600 -300 100 R 50 50 1 1 I
-X CH7 8 -600 -400 100 R 50 50 1 1 I
-X DGND 9 200 -600 100 U 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# dk_Transistors-Bipolar-BJT-Single_2N2219A
-#
-DEF dk_Transistors-Bipolar-BJT-Single_2N2219A Q 0 0 Y Y 1 F N
-F0 "Q" -126 166 60 H V L CNN
-F1 "dk_Transistors-Bipolar-BJT-Single_2N2219A" 206 0 60 V V C CNN
-F2 "digikey-footprints:TO-39-3" 200 200 60 H I L CNN
-F3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2219-19A.PDF" 200 300 60 H I L CNN
-F4 "2N2219ACS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "2N2219A" 200 500 60 H I L CNN "MPN"
-F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
-F7 "Transistors - Bipolar (BJT) - Single" 200 700 60 H I L CNN "Family"
-F8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=2N2219-19A.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/central-semiconductor-corp/2N2219A/2N2219ACS-ND/5118734" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "TRANS NPN 40V 0.8A TO-39" 200 1000 60 H I L CNN "Description"
-F11 "Central Semiconductor Corp" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-C 0 0 128 0 1 0 f
-P 2 0 1 0 -150 0 -100 0 N
-P 2 0 1 0 -140 0 0 0 N
-P 2 0 1 0 0 -50 100 -100 N
-P 2 0 1 0 0 50 100 100 N
-P 2 0 1 0 0 100 0 -100 N
-P 4 0 1 0 60 -50 80 -90 40 -100 60 -50 F
-X E 1 100 -200 100 U 50 50 1 1 P
-X B 2 -200 0 100 R 50 50 1 1 I
-X C 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power1_+3.3V
-#
-DEF power1_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power1_+5V
-#
-DEF power1_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power1_Earth
-#
-DEF power1_Earth #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power1_Earth" 0 -150 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X Earth 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power1_PWR_FLAG
-#
-DEF power1_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power1_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# power1_VEE
-#
-DEF power1_VEE #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1_VEE" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VEE 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# video-microwrave-rescue_C
-#
-DEF video-microwrave-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "video-microwrave-rescue_C" 25 -100 50 H V L CNN
+F1 "C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -169,11 +23,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_CONN_01X09
+# CONN_01X09
 #
-DEF video-microwrave-rescue_CONN_01X09 P 0 40 Y N 1 F N
+DEF CONN_01X09 P 0 40 Y N 1 F N
 F0 "P" 0 500 50 H V C CNN
-F1 "video-microwrave-rescue_CONN_01X09" 100 0 50 V V C CNN
+F1 "CONN_01X09" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -205,11 +59,11 @@ X P9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_CONN_02X05
+# CONN_02X05
 #
-DEF video-microwrave-rescue_CONN_02X05 P 0 1 Y N 1 F N
+DEF CONN_02X05 P 0 1 Y N 1 F N
 F0 "P" 0 300 50 H V C CNN
-F1 "video-microwrave-rescue_CONN_02X05" 0 -300 50 H V C CNN
+F1 "CONN_02X05" 0 -300 50 H V C CNN
 F2 "" 0 -1200 50 H V C CNN
 F3 "" 0 -1200 50 H V C CNN
 $FPLIST
@@ -243,11 +97,11 @@ X P9 9 -250 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_CONN_02X08
+# CONN_02X08
 #
-DEF video-microwrave-rescue_CONN_02X08 P 0 1 Y N 1 F N
+DEF CONN_02X08 P 0 1 Y N 1 F N
 F0 "P" 0 450 50 H V C CNN
-F1 "video-microwrave-rescue_CONN_02X08" 0 0 50 V V C CNN
+F1 "CONN_02X08" 0 0 50 V V C CNN
 F2 "" 0 -1200 50 H V C CNN
 F3 "" 0 -1200 50 H V C CNN
 $FPLIST
@@ -293,11 +147,11 @@ X P9 9 -250 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_CP
+# CP
 #
-DEF video-microwrave-rescue_CP C 0 10 N Y 1 F N
+DEF CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "video-microwrave-rescue_CP" 25 -100 50 H V L CNN
+F1 "CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -322,11 +176,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_FDC6301N
+# FDC6301N
 #
-DEF video-microwrave-rescue_FDC6301N U 0 40 Y Y 1 F N
+DEF FDC6301N U 0 40 Y Y 1 F N
 F0 "U" 0 -250 60 H V C CNN
-F1 "video-microwrave-rescue_FDC6301N" 0 250 60 H V C CNN
+F1 "FDC6301N" 0 250 60 H V C CNN
 F2 "" -150 0 60 H I C CNN
 F3 "" -150 0 60 H I C CNN
 DRAW
@@ -340,11 +194,11 @@ X D2 6 400 100 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_L
+# L
 #
-DEF video-microwrave-rescue_L L 0 40 N N 1 F N
+DEF L L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "video-microwrave-rescue_L" 75 0 50 V V C CNN
+F1 "L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -361,11 +215,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_LM1117-3.3
+# LM1117-3.3
 #
-DEF video-microwrave-rescue_LM1117-3.3 U 0 30 Y Y 1 F N
+DEF LM1117-3.3 U 0 30 Y Y 1 F N
 F0 "U" 100 -250 50 H V C CNN
-F1 "video-microwrave-rescue_LM1117-3.3" 0 250 50 H V C CNN
+F1 "LM1117-3.3" 0 250 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -382,11 +236,37 @@ X VO 4 300 0 100 L 50 50 1 1 w N
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_MCP6004
+# MCP3424
 #
-DEF video-microwrave-rescue_MCP6004 U 0 20 Y Y 4 F N
+DEF MCP3424 U 0 40 Y Y 1 F N
+F0 "U" 0 -500 60 H V C CNN
+F1 "MCP3424" 0 500 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S 300 400 -300 -400 0 1 0 N
+X CH1+ 1 -500 300 200 R 50 50 1 1 I
+X Adr1 10 500 -100 200 L 50 50 1 1 I
+X CH3+ 11 500 0 200 L 50 50 1 1 I
+X CH3- 12 500 100 200 L 50 50 1 1 I
+X CH4+ 13 500 200 200 L 50 50 1 1 I
+X CH4- 14 500 300 200 L 50 50 1 1 I
+X CH1- 2 -500 200 200 R 50 50 1 1 I
+X CH2+ 3 -500 100 200 R 50 50 1 1 I
+X CH2- 4 -500 0 200 R 50 50 1 1 I
+X VSS 5 -500 -100 200 R 50 50 1 1 I
+X VDD 6 -500 -200 200 R 50 50 1 1 W
+X SDA 7 -500 -300 200 R 50 50 1 1 B
+X SCL 8 500 -300 200 L 50 50 1 1 I C
+X Adr0 9 500 -200 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# MCP6004
+#
+DEF MCP6004 U 0 20 Y Y 4 F N
 F0 "U" 0 200 50 H V L CNN
-F1 "video-microwrave-rescue_MCP6004" 0 -200 50 H V L CNN
+F1 "MCP6004" 0 -200 50 H V L CNN
 F2 "" -50 100 50 H V C CNN
 F3 "" 50 200 50 H V C CNN
 $FPLIST
@@ -415,11 +295,11 @@ X ~ 14 300 0 100 L 50 50 4 1 O
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_NCP1117DT50G
+# NCP1117DT50G
 #
-DEF video-microwrave-rescue_NCP1117DT50G U 0 30 Y Y 1 F N
+DEF NCP1117DT50G U 0 30 Y Y 1 F N
 F0 "U" 0 225 50 H V C CNN
-F1 "video-microwrave-rescue_NCP1117DT50G" 0 150 50 H V C CNN
+F1 "NCP1117DT50G" 0 150 50 H V C CNN
 F2 "TO_SOT_Packages_SMD:TO-263-3Lead" 50 -250 50 H I L CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -433,11 +313,11 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_PJ301M-12
+# PJ301M-12
 #
-DEF video-microwrave-rescue_PJ301M-12 J 0 40 Y Y 1 F N
+DEF PJ301M-12 J 0 40 Y Y 1 F N
 F0 "J" -350 -200 50 H V C CNN
-F1 "video-microwrave-rescue_PJ301M-12" -150 250 50 H V C CNN
+F1 "PJ301M-12" -150 250 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -455,11 +335,11 @@ X ~ 3 450 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_R
+# R
 #
-DEF video-microwrave-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "video-microwrave-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -473,11 +353,42 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# video-microwrave-rescue_Raspberry_Pi_2_3
+# R_Pack04_SIP
 #
-DEF video-microwrave-rescue_Raspberry_Pi_2_3 U 0 40 Y Y 1 F N
+DEF R_Pack04_SIP RN 0 0 Y N 1 F N
+F0 "RN" -600 0 50 V V C CNN
+F1 "R_Pack04_SIP" 600 0 50 V V C CNN
+F2 "Resistors_ThroughHole:Resistor_Array_SIP8" 675 0 50 V I C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Resistor?Array?SIP*
+$ENDFPLIST
+DRAW
+S -550 -75 550 175 0 1 10 f
+S -530 110 -470 -50 0 1 10 N
+S -230 110 -170 -50 0 1 10 N
+S 70 110 130 -50 0 1 10 N
+S 370 110 430 -50 0 1 10 N
+P 4 0 1 0 -500 110 -500 140 -400 140 -400 -50 N
+P 4 0 1 0 -200 110 -200 140 -100 140 -100 -50 N
+P 4 0 1 0 100 110 100 140 200 140 200 -50 N
+P 4 0 1 0 400 110 400 140 500 140 500 -50 N
+X R1.1 1 -500 -200 150 U 50 50 1 1 P
+X R1.2 2 -400 -200 150 U 50 50 1 1 P
+X R2.1 3 -200 -200 150 U 50 50 1 1 P
+X R2.2 4 -100 -200 150 U 50 50 1 1 P
+X R3.1 5 100 -200 150 U 50 50 1 1 P
+X R3.2 6 200 -200 150 U 50 50 1 1 P
+X R4.1 7 400 -200 150 U 50 50 1 1 P
+X R4.2 8 500 -200 150 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Raspberry_Pi_2_3
+#
+DEF Raspberry_Pi_2_3 U 0 40 Y Y 1 F N
 F0 "U" 700 -1250 50 H V C CNN
-F1 "video-microwrave-rescue_Raspberry_Pi_2_3" -400 900 50 H V C CNN
+F1 "Raspberry_Pi_2_3" -400 900 50 H V C CNN
 F2 "Pin_Headers:Pin_Header_Straight_2x20" 1000 1250 50 H I C CNN
 F3 "" 50 -150 50 H I C CNN
 DRAW

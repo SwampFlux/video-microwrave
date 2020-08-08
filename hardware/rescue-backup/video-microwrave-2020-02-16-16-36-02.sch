@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L video-microwrave-rescue:Raspberry_Pi_2_3 U101
+L Raspberry_Pi_2_3 U101
 U 1 1 5AF38DD5
 P 5900 5600
 F 0 "U101" H 6600 4350 50  0000 C CNN
@@ -48,7 +80,7 @@ F9 "in2" I L 6400 1650 60
 F10 "in4" I L 6400 1850 60 
 $EndSheet
 $Comp
-L power1:+3.3V #PWR01
+L +3.3V #PWR01
 U 1 1 5BE22E76
 P 6000 4000
 F 0 "#PWR01" H 6000 3850 50  0001 C CNN
@@ -59,7 +91,7 @@ F 3 "" H 6000 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR02
+L +5V #PWR02
 U 1 1 5BE22E99
 P 5750 4000
 F 0 "#PWR02" H 5750 3850 50  0001 C CNN
@@ -70,7 +102,7 @@ F 3 "" H 5750 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR03
+L Earth #PWR03
 U 1 1 5BE22F69
 P 5500 7100
 F 0 "#PWR03" H 5500 6850 50  0001 C CNN
@@ -80,6 +112,22 @@ F 3 "" H 5500 7100 50  0000 C CNN
 	1    5500 7100
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 2400 4100 1750 900 
+U 5BDF5B63
+F0 "adc" 60
+F1 "adc.sch" 60
+F2 "input_1" I L 2400 4200 60 
+F3 "input_2" I L 2400 4300 60 
+F4 "input_3" I L 2400 4400 60 
+F5 "input_4" I L 2400 4500 60 
+F6 "input_5" I L 2400 4600 60 
+F7 "input_6" I L 2400 4700 60 
+F8 "input_7" I L 2400 4800 60 
+F9 "input_8" I L 2400 4900 60 
+F10 "SDA_3V3" O R 4150 4300 60 
+F11 "SCL_3V3" O R 4150 4400 60 
+$EndSheet
 $Sheet
 S 2850 1250 1050 900 
 U 5BE4E775
@@ -111,7 +159,7 @@ F9 "in2" I L 8400 2250 60
 F10 "in4" I L 8400 2450 60 
 $EndSheet
 $Comp
-L power1:Earth #PWR04
+L Earth #PWR04
 U 1 1 5BE5E7A4
 P 4450 2150
 F 0 "#PWR04" H 4450 1900 50  0001 C CNN
@@ -204,14 +252,18 @@ NoConn ~ 6800 4900
 NoConn ~ 6800 5100
 NoConn ~ 6800 5200
 NoConn ~ 6800 5400
+NoConn ~ 6800 5500
+NoConn ~ 6800 5600
+NoConn ~ 6800 5700
+NoConn ~ 6800 5800
 NoConn ~ 6800 6000
 NoConn ~ 6800 6100
 NoConn ~ 6800 6300
 NoConn ~ 6800 6400
-Text Label 5800 3150 0    60   ~ 0
-SCLK_3V3
+Text Label 5800 3550 0    60   ~ 0
+I2C_clock
 Text Label 5800 3300 0    60   ~ 0
-MOSI_3V3
+I2C_data
 Text Label 4900 1350 0    60   ~ 0
 cv1_raw
 Text Label 4900 1450 0    60   ~ 0
@@ -229,7 +281,7 @@ cv7_raw
 Text Label 4900 2450 0    60   ~ 0
 cv8_raw
 $Comp
-L video-microwrave-rescue:CONN_01X09 P101
+L CONN_01X09 P101
 U 1 1 5C00105D
 P 4250 1750
 F 0 "P101" H 4250 2250 50  0000 C CNN
@@ -240,7 +292,7 @@ F 3 "" H 4250 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:CONN_01X09 P102
+L CONN_01X09 P102
 U 1 1 5C006237
 P 4650 1750
 F 0 "P102" H 4650 2250 50  0000 C CNN
@@ -251,7 +303,7 @@ F 3 "" H 4650 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR05
+L Earth #PWR05
 U 1 1 5C006D7A
 P 4050 2150
 F 0 "#PWR05" H 4050 1900 50  0001 C CNN
@@ -264,7 +316,7 @@ $EndComp
 Wire Wire Line
 	5750 4000 5750 4150
 Wire Wire Line
-	5700 4150 5750 4150
+	5700 4150 5800 4150
 Wire Wire Line
 	5800 4150 5800 4300
 Wire Wire Line
@@ -273,11 +325,11 @@ Connection ~ 5750 4150
 Wire Wire Line
 	6000 4000 6000 4300
 Wire Wire Line
-	5500 6900 5500 7000
+	5500 6900 5500 7100
 Wire Wire Line
 	5600 6900 5600 7000
 Wire Wire Line
-	5500 7000 5600 7000
+	5500 7000 6200 7000
 Connection ~ 5500 7000
 Wire Wire Line
 	5700 7000 5700 6900
@@ -298,25 +350,25 @@ Wire Wire Line
 	6200 7000 6200 6900
 Connection ~ 6100 7000
 Wire Wire Line
-	3900 1350 4050 1350
+	3900 1350 5400 1350
 Wire Wire Line
 	5400 1350 5400 1550
 Connection ~ 4050 1350
 Connection ~ 4450 1350
 Wire Wire Line
-	3900 1450 4050 1450
+	3900 1450 5300 1450
 Wire Wire Line
 	5300 1450 5300 1650
 Connection ~ 4050 1450
 Connection ~ 4450 1450
 Wire Wire Line
-	3900 1550 4050 1550
+	3900 1550 5200 1550
 Wire Wire Line
 	5200 1550 5200 1750
 Connection ~ 4050 1550
 Connection ~ 4450 1550
 Wire Wire Line
-	3900 1650 4050 1650
+	3900 1650 5100 1650
 Wire Wire Line
 	5100 1650 5100 1850
 Connection ~ 4050 1650
@@ -330,27 +382,31 @@ Wire Wire Line
 Wire Wire Line
 	4550 2450 8400 2450
 Wire Wire Line
-	3900 1750 4050 1750
+	3900 1750 4850 1750
 Wire Wire Line
 	4850 1750 4850 2150
 Connection ~ 4050 1750
 Wire Wire Line
-	3900 1850 4050 1850
+	3900 1850 4750 1850
 Wire Wire Line
 	4750 1850 4750 2250
 Connection ~ 4050 1850
 Wire Wire Line
-	3900 1950 4050 1950
+	3900 1950 4650 1950
 Wire Wire Line
 	4650 1950 4650 2350
 Connection ~ 4050 1950
 Wire Wire Line
-	3900 2050 4050 2050
+	3900 2050 4550 2050
 Wire Wire Line
 	4550 2050 4550 2450
 Connection ~ 4050 2050
 Wire Bus Line
+	10250 850  10250 2900
+Wire Bus Line
 	10250 2900 1200 2900
+Wire Bus Line
+	1200 2900 1200 5650
 Wire Wire Line
 	9450 1950 10150 1950
 Wire Wire Line
@@ -376,23 +432,27 @@ Wire Wire Line
 Wire Wire Line
 	1300 4900 2400 4900
 Wire Wire Line
-	4150 4500 4650 4500
+	4150 4300 4550 4300
 Wire Wire Line
-	4650 4500 4650 3300
+	4550 4300 4550 3300
 Wire Wire Line
-	4650 3300 7250 3300
+	4550 3300 7250 3300
 Wire Wire Line
-	7250 3300 7250 5700
+	7250 3300 7250 4700
 Wire Wire Line
-	4150 4350 4500 4350
+	7250 4700 6800 4700
 Wire Wire Line
-	4500 4350 4500 3150
+	4150 4400 4650 4400
 Wire Wire Line
-	4500 3150 7400 3150
+	4650 4400 4650 3550
 Wire Wire Line
-	7400 3150 7400 5800
+	4650 3550 7150 3550
 Wire Wire Line
-	2100 1000 6150 1000
+	7150 3550 7150 4800
+Wire Wire Line
+	7150 4800 6800 4800
+Wire Wire Line
+	2100 1000 8150 1000
 Wire Wire Line
 	6150 1000 6150 1350
 Wire Wire Line
@@ -424,104 +484,4 @@ Wire Wire Line
 	10150 1650 7450 1650
 Wire Wire Line
 	2100 1350 2850 1350
-Wire Wire Line
-	5750 4150 5800 4150
-Wire Wire Line
-	5500 7000 5500 7100
-Wire Wire Line
-	5600 7000 5700 7000
-Wire Wire Line
-	5700 7000 5800 7000
-Wire Wire Line
-	5800 7000 5900 7000
-Wire Wire Line
-	5900 7000 6000 7000
-Wire Wire Line
-	6000 7000 6100 7000
-Wire Wire Line
-	6100 7000 6200 7000
-Wire Wire Line
-	4050 1350 4450 1350
-Wire Wire Line
-	4450 1350 5400 1350
-Wire Wire Line
-	4050 1450 4450 1450
-Wire Wire Line
-	4450 1450 5300 1450
-Wire Wire Line
-	4050 1550 4450 1550
-Wire Wire Line
-	4450 1550 5200 1550
-Wire Wire Line
-	4050 1650 4450 1650
-Wire Wire Line
-	4450 1650 5100 1650
-Wire Wire Line
-	4050 1750 4450 1750
-Wire Wire Line
-	4050 1850 4450 1850
-Wire Wire Line
-	4050 1950 4450 1950
-Wire Wire Line
-	4050 2050 4450 2050
-Wire Wire Line
-	6150 1000 8150 1000
-Wire Wire Line
-	4450 1750 4850 1750
-Wire Wire Line
-	4450 1850 4750 1850
-Wire Wire Line
-	4450 1950 4650 1950
-Wire Wire Line
-	4450 2050 4550 2050
-$Sheet
-S 2400 4100 1750 900 
-U 5BDF5B63
-F0 "adc" 60
-F1 "adc.sch" 60
-F2 "input_1" I L 2400 4200 60 
-F3 "input_2" I L 2400 4300 60 
-F4 "input_3" I L 2400 4400 60 
-F5 "input_4" I L 2400 4500 60 
-F6 "input_5" I L 2400 4600 60 
-F7 "input_6" I L 2400 4700 60 
-F8 "input_7" I L 2400 4800 60 
-F9 "input_8" I L 2400 4900 60 
-F10 "MOSI_3V3" I R 4150 4500 60 
-F11 "SCL_3V3" I R 4150 4350 60 
-F12 "MISO_3V3" O R 4150 4650 60 
-F13 "Channel_0" I R 4150 4800 60 
-$EndSheet
-Wire Wire Line
-	6800 5700 7250 5700
-Wire Wire Line
-	7400 5800 6800 5800
-Wire Wire Line
-	6800 5600 7100 5600
-Wire Wire Line
-	7100 5600 7100 3450
-Wire Wire Line
-	7100 3450 4800 3450
-Wire Wire Line
-	4800 3450 4800 4650
-Wire Wire Line
-	4150 4650 4800 4650
-Text Label 5800 3450 0    60   ~ 0
-MISO_3V3
-NoConn ~ 6800 4800
-NoConn ~ 6800 4700
-Wire Wire Line
-	4150 4800 4950 4800
-Wire Wire Line
-	4950 4800 4950 3600
-Wire Wire Line
-	4950 3600 6950 3600
-Wire Wire Line
-	6950 3600 6950 5500
-Wire Wire Line
-	6950 5500 6800 5500
-Wire Bus Line
-	10250 850  10250 2900
-Wire Bus Line
-	1200 2900 1200 5650
 $EndSCHEMATC

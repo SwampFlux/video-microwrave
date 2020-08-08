@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L video-microwrave-rescue:CP CP201
+L CP CP201
 U 1 1 5BE1E2D2
 P 4000 3250
 F 0 "CP201" H 4025 3350 50  0000 L CNN
@@ -25,7 +57,7 @@ F 3 "" H 4000 3250 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:CP CP202
+L CP CP202
 U 1 1 5BE1E2F6
 P 4000 2750
 F 0 "CP202" H 4025 2850 50  0000 L CNN
@@ -36,7 +68,7 @@ F 3 "" H 4000 2750 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:L L201
+L L L201
 U 1 1 5BE1E5E0
 P 3450 3450
 F 0 "L201" V 3400 3450 50  0000 C CNN
@@ -47,7 +79,7 @@ F 3 "" H 3450 3450 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power1:+5V #PWR06
+L +5V #PWR06
 U 1 1 5BE1F4C6
 P 4000 2400
 F 0 "#PWR06" H 4000 2250 50  0001 C CNN
@@ -58,11 +90,9 @@ F 3 "" H 4000 2400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:C C244
+L C C244
 U 1 1 5BE1F870
 P 4300 3250
-AR Path="/5BE1F870" Ref="C244"  Part="1" 
-AR Path="/5BDF5AC7/5BE1F870" Ref="C244"  Part="1" 
 F 0 "C244" H 4325 3350 50  0000 L CNN
 F 1 "100nF" H 4325 3150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 3100 50  0001 C CNN
@@ -71,7 +101,7 @@ F 3 "" H 4300 3250 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power1:Earth #PWR07
+L Earth #PWR07
 U 1 1 5BE20639
 P 3450 3000
 F 0 "#PWR07" H 3450 2750 50  0001 C CNN
@@ -82,7 +112,7 @@ F 3 "" H 3450 3000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR08
+L Earth #PWR08
 U 1 1 5BE20981
 P 2050 3000
 F 0 "#PWR08" H 2050 2750 50  0001 C CNN
@@ -93,7 +123,7 @@ F 3 "" H 2050 3000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power1:VEE #PWR09
+L VEE #PWR09
 U 1 1 5BE2338D
 P 4000 3650
 F 0 "#PWR09" H 4000 3500 50  0001 C CNN
@@ -104,7 +134,7 @@ F 3 "" H 4000 3650 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power1:VEE #PWR010
+L VEE #PWR010
 U 1 1 5BE239F7
 P 6650 1100
 F 0 "#PWR010" H 6650 950 50  0001 C CNN
@@ -115,7 +145,7 @@ F 3 "" H 6650 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG011
+L PWR_FLAG #FLG011
 U 1 1 5BE23A33
 P 6650 1300
 F 0 "#FLG011" H 6650 1395 50  0001 C CNN
@@ -128,7 +158,7 @@ $EndComp
 Text HLabel 5500 4100 2    60   BiDi ~ 0
 -5Voffset
 $Comp
-L power1:PWR_FLAG #FLG012
+L PWR_FLAG #FLG012
 U 1 1 5BE69751
 P 7150 1150
 F 0 "#FLG012" H 7150 1245 50  0001 C CNN
@@ -139,7 +169,7 @@ F 3 "" H 7150 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR013
+L Earth #PWR013
 U 1 1 5BE69788
 P 7150 1400
 F 0 "#PWR013" H 7150 1150 50  0001 C CNN
@@ -150,7 +180,7 @@ F 3 "" H 7150 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR014
+L +5V #PWR014
 U 1 1 5BE69E73
 P 7600 1100
 F 0 "#PWR014" H 7600 950 50  0001 C CNN
@@ -161,7 +191,7 @@ F 3 "" H 7600 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG015
+L PWR_FLAG #FLG015
 U 1 1 5BE69EA8
 P 7600 1300
 F 0 "#FLG015" H 7600 1395 50  0001 C CNN
@@ -172,7 +202,7 @@ F 3 "" H 7600 1300 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L video-microwrave-rescue:NCP1117DT50G U202
+L NCP1117DT50G U202
 U 1 1 5BE9A6E8
 P 4700 4700
 F 0 "U202" H 4700 4925 50  0000 C CNN
@@ -184,7 +214,7 @@ F 4 "LM4040DIM3-5.0" H 4700 5000 60  0000 C CNN "Part Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L power1:VEE #PWR016
+L VEE #PWR016
 U 1 1 5BE9AB77
 P 4000 4200
 F 0 "#PWR016" H 4000 4050 50  0001 C CNN
@@ -195,11 +225,9 @@ F 3 "" H 4000 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:C C202
+L C C202
 U 1 1 5BE9ABC7
 P 4000 4700
-AR Path="/5BE9ABC7" Ref="C202"  Part="1" 
-AR Path="/5BDF5AC7/5BE9ABC7" Ref="C202"  Part="1" 
 F 0 "C202" H 4025 4800 50  0000 L CNN
 F 1 "1uF" H 4025 4600 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4038 4550 50  0001 C CNN
@@ -208,11 +236,9 @@ F 3 "" H 4000 4700 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L video-microwrave-rescue:C C203
+L C C203
 U 1 1 5BE9AF4F
 P 5350 4700
-AR Path="/5BE9AF4F" Ref="C203"  Part="1" 
-AR Path="/5BDF5AC7/5BE9AF4F" Ref="C203"  Part="1" 
 F 0 "C203" H 5375 4800 50  0000 L CNN
 F 1 "1uF" H 5375 4600 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5388 4550 50  0001 C CNN
@@ -221,7 +247,7 @@ F 3 "" H 5350 4700 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power1:Earth #PWR017
+L Earth #PWR017
 U 1 1 5BE9B08F
 P 4700 5300
 F 0 "#PWR017" H 4700 5050 50  0001 C CNN
@@ -232,7 +258,7 @@ F 3 "" H 4700 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:R R205
+L R R205
 U 1 1 5BE9B1DC
 P 4250 4350
 F 0 "R205" V 4330 4350 50  0000 C CNN
@@ -246,11 +272,9 @@ NoConn ~ 4400 4700
 Text Label 3000 3450 0    60   ~ 0
 -12
 $Comp
-L video-microwrave-rescue:CONN_02X08 P201
+L CONN_02X08 P201
 U 1 1 5C042B9C
 P 2650 2850
-AR Path="/5C042B9C" Ref="P201"  Part="1" 
-AR Path="/5BDF5AC7/5C042B9C" Ref="P201"  Part="1" 
 F 0 "P201" H 2650 3300 50  0000 C CNN
 F 1 "CONN_02X08" V 2650 2850 50  0000 C CNN
 F 2 "" H 2650 1650 50  0000 C CNN
@@ -259,11 +283,9 @@ F 3 "" H 2650 1650 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L video-microwrave-rescue:C C201
+L C C201
 U 1 1 5C0437AA
 P 4300 2750
-AR Path="/5C0437AA" Ref="C201"  Part="1" 
-AR Path="/5BDF5AC7/5C0437AA" Ref="C201"  Part="1" 
 F 0 "C201" H 4325 2850 50  0000 L CNN
 F 1 "100nF" H 4325 2650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 2600 50  0001 C CNN
@@ -278,7 +300,7 @@ internal_cv
 Text HLabel 3650 1650 2    60   BiDi ~ 0
 internal_gate
 $Comp
-L video-microwrave-rescue:L L202
+L L L202
 U 1 1 5C045712
 P 3450 2700
 F 0 "L202" V 3400 2700 50  0000 C CNN
@@ -289,18 +311,18 @@ F 3 "" H 3450 2700 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4000 3400 4000 3450
+	4000 3400 4000 3650
 Wire Wire Line
-	4000 2900 4000 3000
+	4000 2900 4000 3100
 Wire Wire Line
-	2900 3000 3450 3000
+	2900 3000 4300 3000
 Connection ~ 4000 3000
 Wire Wire Line
-	2900 2900 2900 3000
+	2900 2900 2900 3100
 Connection ~ 2900 3000
 Connection ~ 3450 3000
 Wire Wire Line
-	2400 2900 2400 3000
+	2400 2900 2400 3100
 Connection ~ 2400 3000
 Wire Wire Line
 	2400 3000 2050 3000
@@ -309,7 +331,7 @@ Wire Wire Line
 	4000 2600 4000 2400
 Connection ~ 4000 2600
 Wire Wire Line
-	3600 3450 4000 3450
+	3600 3450 4300 3450
 Wire Wire Line
 	6650 1100 6650 1300
 Wire Wire Line
@@ -317,25 +339,25 @@ Wire Wire Line
 Wire Wire Line
 	7600 1300 7600 1100
 Wire Wire Line
-	4700 5000 4700 5100
+	4700 5000 4700 5300
 Wire Wire Line
 	5350 5100 5350 4850
 Wire Wire Line
-	4000 5100 4700 5100
+	4000 5100 5350 5100
 Connection ~ 4700 5100
 Wire Wire Line
 	4000 4850 4000 5100
 Wire Wire Line
-	4000 4200 4000 4350
+	4000 4200 4000 4550
 Wire Wire Line
 	4000 4350 4100 4350
 Connection ~ 4000 4350
 Wire Wire Line
-	4400 4350 4700 4350
+	4400 4350 5350 4350
 Wire Wire Line
 	4700 4350 4700 4400
 Wire Wire Line
-	5350 4100 5350 4350
+	5350 4100 5350 4550
 Connection ~ 4700 4350
 Wire Wire Line
 	5500 4100 5350 4100
@@ -343,23 +365,23 @@ Connection ~ 5350 4350
 Wire Wire Line
 	3600 2700 3600 2600
 Wire Wire Line
-	3600 2600 4000 2600
+	3600 2600 4700 2600
 Wire Wire Line
 	4300 3450 4300 3400
 Wire Wire Line
-	4300 2900 4300 3000
+	4300 2900 4300 3100
 Connection ~ 4300 3000
 Wire Wire Line
 	2900 2500 2400 2500
 Wire Wire Line
-	2400 2700 2900 2700
+	2400 2700 3300 2700
 Connection ~ 2900 2700
 Wire Wire Line
 	2900 2500 2900 1650
 Wire Wire Line
 	2900 1650 3650 1650
 $Comp
-L power1:Earth #PWR018
+L Earth #PWR018
 U 1 1 5BE1F1F6
 P 5750 3050
 F 0 "#PWR018" H 5750 2800 50  0001 C CNN
@@ -370,7 +392,7 @@ F 3 "" H 5750 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:L L203
+L L L203
 U 1 1 5BE1E8D0
 P 4850 2600
 F 0 "L203" V 4800 2600 50  0000 C CNN
@@ -382,7 +404,7 @@ F 3 "" H 4850 2600 50  0000 C CNN
 $EndComp
 Connection ~ 4300 2600
 $Comp
-L video-microwrave-rescue:LM1117-3.3 U201
+L LM1117-3.3 U201
 U 1 1 5C045FDC
 P 5750 2600
 F 0 "U201" H 5850 2350 50  0000 C CNN
@@ -393,11 +415,11 @@ F 3 "" H 5750 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2600 5250 2600
+	5000 2600 5450 2600
 Wire Wire Line
 	5750 2900 5750 3050
 $Comp
-L power1:+3.3V #PWR019
+L +3.3V #PWR019
 U 1 1 5C04627A
 P 8100 1100
 F 0 "#PWR019" H 8100 950 50  0001 C CNN
@@ -408,7 +430,7 @@ F 3 "" H 8100 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG020
+L PWR_FLAG #FLG020
 U 1 1 5C0462C2
 P 8100 1300
 F 0 "#FLG020" H 8100 1395 50  0001 C CNN
@@ -421,7 +443,7 @@ $EndComp
 Wire Wire Line
 	8100 1100 8100 1300
 $Comp
-L power1:+3.3V #PWR021
+L +3.3V #PWR021
 U 1 1 5C046662
 P 6400 2350
 F 0 "#PWR021" H 6400 2200 50  0001 C CNN
@@ -442,14 +464,14 @@ Wire Wire Line
 Wire Wire Line
 	2900 3450 3300 3450
 Wire Wire Line
-	2400 2600 2900 2600
+	2400 2600 3100 2600
 Wire Wire Line
 	3100 2600 3100 1850
 Wire Wire Line
 	3100 1850 3650 1850
 Connection ~ 2900 2600
 $Comp
-L power1:PWR_FLAG #FLG022
+L PWR_FLAG #FLG022
 U 1 1 5C047766
 P 5250 2600
 F 0 "#FLG022" H 5250 2695 50  0001 C CNN
@@ -461,7 +483,7 @@ F 3 "" H 5250 2600 50  0000 C CNN
 $EndComp
 Connection ~ 5250 2600
 $Comp
-L power1:PWR_FLAG #FLG023
+L PWR_FLAG #FLG023
 U 1 1 5C047800
 P 6400 2600
 F 0 "#FLG023" H 6400 2695 50  0001 C CNN
@@ -472,40 +494,4 @@ F 3 "" H 6400 2600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 6400 2600
-Wire Wire Line
-	4000 3000 4000 3100
-Wire Wire Line
-	4000 3000 4300 3000
-Wire Wire Line
-	2900 3000 2900 3100
-Wire Wire Line
-	3450 3000 4000 3000
-Wire Wire Line
-	2400 3000 2400 3100
-Wire Wire Line
-	4000 3450 4000 3650
-Wire Wire Line
-	4000 3450 4300 3450
-Wire Wire Line
-	4000 2600 4300 2600
-Wire Wire Line
-	4700 5100 4700 5300
-Wire Wire Line
-	4700 5100 5350 5100
-Wire Wire Line
-	4000 4350 4000 4550
-Wire Wire Line
-	4700 4350 5350 4350
-Wire Wire Line
-	5350 4350 5350 4550
-Wire Wire Line
-	4300 3000 4300 3100
-Wire Wire Line
-	2900 2700 3300 2700
-Wire Wire Line
-	4300 2600 4700 2600
-Wire Wire Line
-	2900 2600 3100 2600
-Wire Wire Line
-	5250 2600 5450 2600
 $EndSCHEMATC

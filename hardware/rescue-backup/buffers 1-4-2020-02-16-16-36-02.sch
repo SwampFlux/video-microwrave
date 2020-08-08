@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -16,7 +48,7 @@ $EndDescr
 Text HLabel 2000 1150 0    60   BiDi ~ 0
 -5V
 $Comp
-L video-microwrave-rescue:MCP6004 U301
+L MCP6004 U301
 U 1 1 5BE25FAF
 P 8400 3850
 F 0 "U301" H 8400 4050 50  0000 L CNN
@@ -27,7 +59,7 @@ F 3 "" H 8450 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:R R305
+L R R305
 U 1 1 5BE263D1
 P 2500 1700
 F 0 "R305" V 2580 1700 50  0000 C CNN
@@ -39,7 +71,7 @@ F 4 "CR21-102J-T" V 2400 1700 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L video-microwrave-rescue:R R301
+L R R301
 U 1 1 5BE26538
 P 2500 1350
 F 0 "R301" V 2580 1350 50  0000 C CNN
@@ -57,7 +89,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 1700 2350 1700
 $Comp
-L power1:+5V #PWR024
+L +5V #PWR024
 U 1 1 5BE268F6
 P 3350 1300
 F 0 "#PWR024" H 3350 1150 50  0001 C CNN
@@ -68,7 +100,7 @@ F 3 "" H 3350 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR025
+L Earth #PWR025
 U 1 1 5BE26952
 P 3350 1900
 F 0 "#PWR025" H 3350 1650 50  0001 C CNN
@@ -81,12 +113,12 @@ $EndComp
 Wire Wire Line
 	2650 1350 2900 1350
 Wire Wire Line
-	2900 1350 2900 1700
+	2900 1350 2900 2700
 Wire Wire Line
-	2650 1700 2900 1700
+	2650 1700 3150 1700
 Connection ~ 2900 1700
 $Comp
-L power1:Earth #PWR026
+L Earth #PWR026
 U 1 1 5BE271CC
 P 3050 1150
 F 0 "#PWR026" H 3050 900 50  0001 C CNN
@@ -101,11 +133,9 @@ Wire Wire Line
 Wire Wire Line
 	3050 1500 3050 1150
 $Comp
-L video-microwrave-rescue:C C301
+L C C301
 U 1 1 5BE27254
 P 3400 2300
-AR Path="/5BE27254" Ref="C301"  Part="1" 
-AR Path="/5BE21955/5BE27254" Ref="C301"  Part="1" 
 F 0 "C301" V 3450 2350 50  0000 L CNN
 F 1 "560pF" V 3350 2350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3438 2150 50  0001 C CNN
@@ -116,7 +146,7 @@ $EndComp
 Wire Wire Line
 	2900 2300 3250 2300
 $Comp
-L video-microwrave-rescue:R R307
+L R R307
 U 1 1 5BE276C0
 P 3400 2700
 F 0 "R307" V 3480 2700 50  0000 C CNN
@@ -131,7 +161,7 @@ Wire Wire Line
 	2900 2700 3250 2700
 Connection ~ 2900 2300
 $Comp
-L video-microwrave-rescue:R R303
+L R R303
 U 1 1 5BE278C1
 P 4300 1600
 F 0 "R303" V 4380 1600 50  0000 C CNN
@@ -143,11 +173,11 @@ F 4 "CR21-101J-T" V 4200 1600 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 1600 3950 1600
+	3750 1600 4150 1600
 Wire Wire Line
 	3550 2300 3950 2300
 Wire Wire Line
-	3950 1600 3950 2300
+	3950 1600 3950 2700
 Connection ~ 3950 1600
 Wire Wire Line
 	3950 2700 3550 2700
@@ -163,7 +193,7 @@ Wire Wire Line
 Text HLabel 6950 1150 0    60   BiDi ~ 0
 -5V
 $Comp
-L video-microwrave-rescue:R R306
+L R R306
 U 1 1 5BE45A5A
 P 7450 1700
 F 0 "R306" V 7530 1700 50  0000 C CNN
@@ -175,7 +205,7 @@ F 4 "CR21-102J-T" V 7350 1700 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L video-microwrave-rescue:R R302
+L R R302
 U 1 1 5BE45A62
 P 7450 1350
 F 0 "R302" V 7530 1350 50  0000 C CNN
@@ -193,7 +223,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 1700 7300 1700
 $Comp
-L power1:+5V #PWR027
+L +5V #PWR027
 U 1 1 5BE45A6C
 P 8300 1300
 F 0 "#PWR027" H 8300 1150 50  0001 C CNN
@@ -204,7 +234,7 @@ F 3 "" H 8300 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR028
+L Earth #PWR028
 U 1 1 5BE45A72
 P 8300 1900
 F 0 "#PWR028" H 8300 1650 50  0001 C CNN
@@ -217,12 +247,12 @@ $EndComp
 Wire Wire Line
 	7600 1350 7850 1350
 Wire Wire Line
-	7850 1350 7850 1700
+	7850 1350 7850 2700
 Wire Wire Line
-	7600 1700 7850 1700
+	7600 1700 8100 1700
 Connection ~ 7850 1700
 $Comp
-L power1:Earth #PWR029
+L Earth #PWR029
 U 1 1 5BE45A7C
 P 8000 1150
 F 0 "#PWR029" H 8000 900 50  0001 C CNN
@@ -237,11 +267,9 @@ Wire Wire Line
 Wire Wire Line
 	8000 1500 8000 1150
 $Comp
-L video-microwrave-rescue:C C302
+L C C302
 U 1 1 5BE45A84
 P 8350 2300
-AR Path="/5BE45A84" Ref="C302"  Part="1" 
-AR Path="/5BE21955/5BE45A84" Ref="C302"  Part="1" 
 F 0 "C302" V 8400 2350 50  0000 L CNN
 F 1 "560pF" V 8300 2350 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8388 2150 50  0001 C CNN
@@ -252,7 +280,7 @@ $EndComp
 Wire Wire Line
 	7850 2300 8200 2300
 $Comp
-L video-microwrave-rescue:R R308
+L R R308
 U 1 1 5BE45A8D
 P 8350 2700
 F 0 "R308" V 8430 2700 50  0000 C CNN
@@ -267,7 +295,7 @@ Wire Wire Line
 	7850 2700 8200 2700
 Connection ~ 7850 2300
 $Comp
-L video-microwrave-rescue:R R304
+L R R304
 U 1 1 5BE45A97
 P 9250 1600
 F 0 "R304" V 9330 1600 50  0000 C CNN
@@ -279,11 +307,11 @@ F 4 "CR21-101J-T" V 9150 1600 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 1600 8900 1600
+	8700 1600 9100 1600
 Wire Wire Line
 	8500 2300 8900 2300
 Wire Wire Line
-	8900 1600 8900 2300
+	8900 1600 8900 2700
 Connection ~ 8900 1600
 Wire Wire Line
 	8900 2700 8500 2700
@@ -297,7 +325,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 1150 9800 1150
 $Comp
-L video-microwrave-rescue:MCP6004 U301
+L MCP6004 U301
 U 2 1 5BE45CBD
 P 3450 3850
 F 0 "U301" H 3450 4050 50  0000 L CNN
@@ -310,7 +338,7 @@ $EndComp
 Text HLabel 2000 3400 0    60   BiDi ~ 0
 -5V
 $Comp
-L video-microwrave-rescue:R R313
+L R R313
 U 1 1 5BE46075
 P 2500 3950
 F 0 "R313" V 2580 3950 50  0000 C CNN
@@ -322,7 +350,7 @@ F 4 "CR21-102J-T" V 2400 3950 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L video-microwrave-rescue:R R309
+L R R309
 U 1 1 5BE4607D
 P 2500 3600
 F 0 "R309" V 2580 3600 50  0000 C CNN
@@ -340,7 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3950 2350 3950
 $Comp
-L power1:+5V #PWR030
+L +5V #PWR030
 U 1 1 5BE46087
 P 3350 3550
 F 0 "#PWR030" H 3350 3400 50  0001 C CNN
@@ -351,7 +379,7 @@ F 3 "" H 3350 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR031
+L Earth #PWR031
 U 1 1 5BE4608D
 P 3350 4150
 F 0 "#PWR031" H 3350 3900 50  0001 C CNN
@@ -364,12 +392,12 @@ $EndComp
 Wire Wire Line
 	2650 3600 2900 3600
 Wire Wire Line
-	2900 3600 2900 3950
+	2900 3600 2900 4950
 Wire Wire Line
-	2650 3950 2900 3950
+	2650 3950 3150 3950
 Connection ~ 2900 3950
 $Comp
-L power1:Earth #PWR032
+L Earth #PWR032
 U 1 1 5BE46097
 P 3050 3400
 F 0 "#PWR032" H 3050 3150 50  0001 C CNN
@@ -384,11 +412,9 @@ Wire Wire Line
 Wire Wire Line
 	3050 3750 3050 3400
 $Comp
-L video-microwrave-rescue:C C303
+L C C303
 U 1 1 5BE4609F
 P 3400 4550
-AR Path="/5BE4609F" Ref="C303"  Part="1" 
-AR Path="/5BE21955/5BE4609F" Ref="C303"  Part="1" 
 F 0 "C303" V 3450 4600 50  0000 L CNN
 F 1 "560pF" V 3350 4600 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3438 4400 50  0001 C CNN
@@ -399,7 +425,7 @@ $EndComp
 Wire Wire Line
 	2900 4550 3250 4550
 $Comp
-L video-microwrave-rescue:R R315
+L R R315
 U 1 1 5BE460A8
 P 3400 4950
 F 0 "R315" V 3480 4950 50  0000 C CNN
@@ -414,7 +440,7 @@ Wire Wire Line
 	2900 4950 3250 4950
 Connection ~ 2900 4550
 $Comp
-L video-microwrave-rescue:R R311
+L R R311
 U 1 1 5BE460B2
 P 4300 3850
 F 0 "R311" V 4380 3850 50  0000 C CNN
@@ -426,11 +452,11 @@ F 4 "CR21-101J-T" V 4200 3850 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3850 3950 3850
+	3750 3850 4150 3850
 Wire Wire Line
 	3550 4550 3950 4550
 Wire Wire Line
-	3950 3850 3950 4550
+	3950 3850 3950 4950
 Connection ~ 3950 3850
 Wire Wire Line
 	3950 4950 3550 4950
@@ -446,7 +472,7 @@ Wire Wire Line
 Text HLabel 6950 3400 0    60   BiDi ~ 0
 -5V
 $Comp
-L video-microwrave-rescue:R R314
+L R R314
 U 1 1 5BE464A3
 P 7450 3950
 F 0 "R314" V 7530 3950 50  0000 C CNN
@@ -458,7 +484,7 @@ F 4 "CR21-102J-T" V 7350 3950 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L video-microwrave-rescue:R R310
+L R R310
 U 1 1 5BE464AB
 P 7450 3600
 F 0 "R310" V 7530 3600 50  0000 C CNN
@@ -476,7 +502,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 3950 7300 3950
 $Comp
-L power1:+5V #PWR033
+L +5V #PWR033
 U 1 1 5BE464B5
 P 8300 3550
 F 0 "#PWR033" H 8300 3400 50  0001 C CNN
@@ -487,7 +513,7 @@ F 3 "" H 8300 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:Earth #PWR034
+L Earth #PWR034
 U 1 1 5BE464BB
 P 8300 4150
 F 0 "#PWR034" H 8300 3900 50  0001 C CNN
@@ -500,12 +526,12 @@ $EndComp
 Wire Wire Line
 	7600 3600 7850 3600
 Wire Wire Line
-	7850 3600 7850 3950
+	7850 3600 7850 4950
 Wire Wire Line
-	7600 3950 7850 3950
+	7600 3950 8100 3950
 Connection ~ 7850 3950
 $Comp
-L power1:Earth #PWR035
+L Earth #PWR035
 U 1 1 5BE464C5
 P 8000 3400
 F 0 "#PWR035" H 8000 3150 50  0001 C CNN
@@ -520,11 +546,9 @@ Wire Wire Line
 Wire Wire Line
 	8000 3750 8000 3400
 $Comp
-L video-microwrave-rescue:C C304
+L C C304
 U 1 1 5BE464CD
 P 8350 4550
-AR Path="/5BE464CD" Ref="C304"  Part="1" 
-AR Path="/5BE21955/5BE464CD" Ref="C304"  Part="1" 
 F 0 "C304" V 8400 4600 50  0000 L CNN
 F 1 "560pF" V 8300 4600 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8388 4400 50  0001 C CNN
@@ -535,7 +559,7 @@ $EndComp
 Wire Wire Line
 	7850 4550 8200 4550
 $Comp
-L video-microwrave-rescue:R R316
+L R R316
 U 1 1 5BE464D6
 P 8350 4950
 F 0 "R316" V 8430 4950 50  0000 C CNN
@@ -550,7 +574,7 @@ Wire Wire Line
 	7850 4950 8200 4950
 Connection ~ 7850 4550
 $Comp
-L video-microwrave-rescue:R R312
+L R R312
 U 1 1 5BE464E0
 P 9250 3850
 F 0 "R312" V 9330 3850 50  0000 C CNN
@@ -562,11 +586,11 @@ F 4 "CR21-101J-T" V 9150 3850 60  0000 C CNN "Manufacturer Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8700 3850 8900 3850
+	8700 3850 9100 3850
 Wire Wire Line
 	8500 4550 8900 4550
 Wire Wire Line
-	8900 3850 8900 4550
+	8900 3850 8900 4950
 Connection ~ 8900 3850
 Wire Wire Line
 	8900 4950 8500 4950
@@ -580,7 +604,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 3400 9800 3400
 $Comp
-L video-microwrave-rescue:MCP6004 U301
+L MCP6004 U301
 U 4 1 5BE46804
 P 3450 1600
 F 0 "U301" H 3450 1800 50  0000 L CNN
@@ -591,7 +615,7 @@ F 3 "" H 3500 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L video-microwrave-rescue:MCP6004 U301
+L MCP6004 U301
 U 3 1 5BE46A33
 P 8400 1600
 F 0 "U301" H 8400 1800 50  0000 L CNN
@@ -609,44 +633,4 @@ Text HLabel 6950 1700 0    60   Input ~ 0
 in2
 Text HLabel 6950 3950 0    60   Input ~ 0
 in4
-Wire Wire Line
-	2900 1700 2900 2300
-Wire Wire Line
-	2900 1700 3150 1700
-Wire Wire Line
-	2900 2300 2900 2700
-Wire Wire Line
-	3950 1600 4150 1600
-Wire Wire Line
-	3950 2300 3950 2700
-Wire Wire Line
-	7850 1700 7850 2300
-Wire Wire Line
-	7850 1700 8100 1700
-Wire Wire Line
-	7850 2300 7850 2700
-Wire Wire Line
-	8900 1600 9100 1600
-Wire Wire Line
-	8900 2300 8900 2700
-Wire Wire Line
-	2900 3950 2900 4550
-Wire Wire Line
-	2900 3950 3150 3950
-Wire Wire Line
-	2900 4550 2900 4950
-Wire Wire Line
-	3950 3850 4150 3850
-Wire Wire Line
-	3950 4550 3950 4950
-Wire Wire Line
-	7850 3950 7850 4550
-Wire Wire Line
-	7850 3950 8100 3950
-Wire Wire Line
-	7850 4550 7850 4950
-Wire Wire Line
-	8900 3850 9100 3850
-Wire Wire Line
-	8900 4550 8900 4950
 $EndSCHEMATC
