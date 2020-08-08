@@ -1,0 +1,6 @@
+[submodule "software/include/ABElectronics_CPP"]
+	path = software/include/ABElectronics_CPP
+	url = https://github.com/abelectronicsuk/ABElectronics_CPP_Libraries.git
+[submodule "software/include/oscpack"]
+	path = software/include/oscpack
+	url = https://github.com/RossBencina/oscpack.git
