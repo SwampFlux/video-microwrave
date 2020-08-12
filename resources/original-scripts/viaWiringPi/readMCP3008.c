@@ -6,7 +6,7 @@
  *
  * compile with the following command
  *
- * gcc -Wall -o readMCP3008 readMPC3008.c -lwiringPi
+ * gcc -Wall -o readMCP3008 readMCP3008.c -lwiringPi
  *
  */
 
@@ -41,10 +41,11 @@ int main(int argc, char *argv [])
   mcp3004Setup(BASE, 0);
   int channel;
   while(1){
-    for(channel=0; channel<1; channel++){
-      printf("u_%i,%f%c", channel, (analogRead(channel) / 1024.0), '\n' );
+    for(channel=0; channel<8; channel++){
+      printf("%i:%f, ", channel, (analogRead(channel) / 1024.0) );
 //      sleep(1);
     }
+    printf("\n");
   }
   return 0;
 }

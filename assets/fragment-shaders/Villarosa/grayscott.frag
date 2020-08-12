@@ -6,14 +6,9 @@ precision mediump float;
 
 uniform sampler2D u_backbuffer;
 uniform vec2 u_resolution;
-uniform float u_analog0;
-uniform float u_analog1;
-uniform float u_analog2;
-uniform float u_analog3;
-uniform float u_analog4;
-uniform float u_analog5;
-uniform float u_analog6;
-uniform float u_analog7;
+uniform float cv3;
+uniform float cv5;
+uniform float cv7;
 uniform float u_time;
 
 float diffU = 0.25;
@@ -57,10 +52,10 @@ void main(void){
     offset[7] = pixel * vec2( 0.0,1.0);
     offset[8] = pixel * vec2( 1.0,1.0);
 
-    vec2 offAxes = 4.0 * pixel * (vec2(0.5) - vec2(u_analog6, u_analog7) );
+    vec2 offAxes = 4.0 * pixel * (vec2(0.5) - vec2(0., 0.) );
     vec2 texColor = texture2D(u_backbuffer, st + pixel / 2.0 + offAxes).rb;
 
-    vec2 axes = vec2(1.) - st - vec2(u_analog3, u_analog4);
+    vec2 axes = vec2(1.) - st - vec2(1. - cv5, 1. - cv3);
     float pct = random(u_time);
     float srcTexColor = smoothstep(.999+pct*0.0001,1.,1.-dot(axes,axes))*random(st)*pct;
 
@@ -85,5 +80,5 @@ void main(void){
     u += du * 0.6;
     v += dv * 0.6;
 
-    gl_FragColor = vec4(clamp( u*u_analog1, 0.0, 1.0 ), u_analog5*1.0 - u/v ,clamp( v, 0.0, 1.0 ), 1.0);
+    gl_FragColor = vec4(clamp( u, 0.0, 1.0 ), cv7*1.0 - u/v ,clamp( v, 0.0, 1.0 ), 1.0);
  }
