@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:eurocad
+LIBS:microwrave
+LIBS:video-microwrave-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L video-microwrave-rescue:PJ301M-12 J501
+L PJ301M-12 J501
 U 1 1 5BE4F2E5
 P 1650 1200
 F 0 "J501" H 1300 1000 50  0000 C CNN
@@ -26,19 +58,25 @@ F 3 "" H 1650 1200 50  0000 C CNN
 $EndComp
 Text HLabel 2450 1100 2    60   Output ~ 0
 CV1
+Wire Wire Line
+	2100 1100 2450 1100
 $Comp
-L power1:Earth #PWR053
+L Earth #PWR058
 U 1 1 5BE4F837
 P 2200 1350
-F 0 "#PWR053" H 2200 1100 50  0001 C CNN
+F 0 "#PWR058" H 2200 1100 50  0001 C CNN
 F 1 "Earth" H 2200 1200 50  0001 C CNN
 F 2 "" H 2200 1350 50  0000 C CNN
 F 3 "" H 2200 1350 50  0000 C CNN
 	1    2200 1350
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 1200 2100 1350
+Wire Wire Line
+	2100 1350 2200 1350
 $Comp
-L video-microwrave-rescue:PJ301M-12 J502
+L PJ301M-12 J502
 U 1 1 5BE4F958
 P 1650 1900
 F 0 "J502" H 1300 1700 50  0000 C CNN
@@ -50,19 +88,25 @@ F 3 "" H 1650 1900 50  0000 C CNN
 $EndComp
 Text HLabel 2450 1800 2    60   Output ~ 0
 CV2
+Wire Wire Line
+	2100 1800 2450 1800
 $Comp
-L power1:Earth #PWR054
+L Earth #PWR059
 U 1 1 5BE4F961
 P 2200 2050
-F 0 "#PWR054" H 2200 1800 50  0001 C CNN
+F 0 "#PWR059" H 2200 1800 50  0001 C CNN
 F 1 "Earth" H 2200 1900 50  0001 C CNN
 F 2 "" H 2200 2050 50  0000 C CNN
 F 3 "" H 2200 2050 50  0000 C CNN
 	1    2200 2050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 1900 2100 2050
+Wire Wire Line
+	2100 2050 2200 2050
 $Comp
-L video-microwrave-rescue:PJ301M-12 J503
+L PJ301M-12 J503
 U 1 1 5BE4FA33
 P 1650 2600
 F 0 "J503" H 1300 2400 50  0000 C CNN
@@ -74,19 +118,25 @@ F 3 "" H 1650 2600 50  0000 C CNN
 $EndComp
 Text HLabel 2450 2500 2    60   Output ~ 0
 CV3
+Wire Wire Line
+	2100 2500 2450 2500
 $Comp
-L power1:Earth #PWR055
+L Earth #PWR060
 U 1 1 5BE4FA3C
 P 2200 2750
-F 0 "#PWR055" H 2200 2500 50  0001 C CNN
+F 0 "#PWR060" H 2200 2500 50  0001 C CNN
 F 1 "Earth" H 2200 2600 50  0001 C CNN
 F 2 "" H 2200 2750 50  0000 C CNN
 F 3 "" H 2200 2750 50  0000 C CNN
 	1    2200 2750
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 2600 2100 2750
+Wire Wire Line
+	2100 2750 2200 2750
 $Comp
-L video-microwrave-rescue:PJ301M-12 J504
+L PJ301M-12 J504
 U 1 1 5BE4FB21
 P 1650 3300
 F 0 "J504" H 1300 3100 50  0000 C CNN
@@ -98,19 +148,25 @@ F 3 "" H 1650 3300 50  0000 C CNN
 $EndComp
 Text HLabel 2450 3200 2    60   Output ~ 0
 CV4
+Wire Wire Line
+	2100 3200 2450 3200
 $Comp
-L power1:Earth #PWR056
+L Earth #PWR061
 U 1 1 5BE4FB2A
 P 2200 3450
-F 0 "#PWR056" H 2200 3200 50  0001 C CNN
+F 0 "#PWR061" H 2200 3200 50  0001 C CNN
 F 1 "Earth" H 2200 3300 50  0001 C CNN
 F 2 "" H 2200 3450 50  0000 C CNN
 F 3 "" H 2200 3450 50  0000 C CNN
 	1    2200 3450
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 3300 2100 3450
+Wire Wire Line
+	2100 3450 2200 3450
 $Comp
-L video-microwrave-rescue:PJ301M-12 J505
+L PJ301M-12 J505
 U 1 1 5BE4FBED
 P 1650 4000
 F 0 "J505" H 1300 3800 50  0000 C CNN
@@ -122,19 +178,25 @@ F 3 "" H 1650 4000 50  0000 C CNN
 $EndComp
 Text HLabel 2450 3900 2    60   Output ~ 0
 CV5
+Wire Wire Line
+	2100 3900 2450 3900
 $Comp
-L power1:Earth #PWR057
+L Earth #PWR062
 U 1 1 5BE4FBF6
 P 2200 4150
-F 0 "#PWR057" H 2200 3900 50  0001 C CNN
+F 0 "#PWR062" H 2200 3900 50  0001 C CNN
 F 1 "Earth" H 2200 4000 50  0001 C CNN
 F 2 "" H 2200 4150 50  0000 C CNN
 F 3 "" H 2200 4150 50  0000 C CNN
 	1    2200 4150
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 4000 2100 4150
+Wire Wire Line
+	2100 4150 2200 4150
 $Comp
-L video-microwrave-rescue:PJ301M-12 J506
+L PJ301M-12 J506
 U 1 1 5BE4FCA1
 P 1650 4700
 F 0 "J506" H 1300 4500 50  0000 C CNN
@@ -146,19 +208,25 @@ F 3 "" H 1650 4700 50  0000 C CNN
 $EndComp
 Text HLabel 2450 4600 2    60   Output ~ 0
 CV6
+Wire Wire Line
+	2100 4600 2450 4600
 $Comp
-L power1:Earth #PWR058
+L Earth #PWR063
 U 1 1 5BE4FCAA
 P 2200 4850
-F 0 "#PWR058" H 2200 4600 50  0001 C CNN
+F 0 "#PWR063" H 2200 4600 50  0001 C CNN
 F 1 "Earth" H 2200 4700 50  0001 C CNN
 F 2 "" H 2200 4850 50  0000 C CNN
 F 3 "" H 2200 4850 50  0000 C CNN
 	1    2200 4850
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 4700 2100 4850
+Wire Wire Line
+	2100 4850 2200 4850
 $Comp
-L video-microwrave-rescue:PJ301M-12 J507
+L PJ301M-12 J507
 U 1 1 5BE4FD57
 P 1650 5400
 F 0 "J507" H 1300 5200 50  0000 C CNN
@@ -170,19 +238,25 @@ F 3 "" H 1650 5400 50  0000 C CNN
 $EndComp
 Text HLabel 2450 5300 2    60   Output ~ 0
 CV7
+Wire Wire Line
+	2100 5300 2450 5300
 $Comp
-L power1:Earth #PWR059
+L Earth #PWR064
 U 1 1 5BE4FD60
 P 2200 5550
-F 0 "#PWR059" H 2200 5300 50  0001 C CNN
+F 0 "#PWR064" H 2200 5300 50  0001 C CNN
 F 1 "Earth" H 2200 5400 50  0001 C CNN
 F 2 "" H 2200 5550 50  0000 C CNN
 F 3 "" H 2200 5550 50  0000 C CNN
 	1    2200 5550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 5400 2100 5550
+Wire Wire Line
+	2100 5550 2200 5550
 $Comp
-L video-microwrave-rescue:PJ301M-12 J508
+L PJ301M-12 J508
 U 1 1 5BE4FDFF
 P 1650 6100
 F 0 "J508" H 1300 5900 50  0000 C CNN
@@ -194,126 +268,21 @@ F 3 "" H 1650 6100 50  0000 C CNN
 $EndComp
 Text HLabel 2450 6000 2    60   Output ~ 0
 CV8
+Wire Wire Line
+	2100 6000 2450 6000
 $Comp
-L power1:Earth #PWR060
+L Earth #PWR065
 U 1 1 5BE4FE08
 P 2200 6250
-F 0 "#PWR060" H 2200 6000 50  0001 C CNN
+F 0 "#PWR065" H 2200 6000 50  0001 C CNN
 F 1 "Earth" H 2200 6100 50  0001 C CNN
 F 2 "" H 2200 6250 50  0000 C CNN
 F 3 "" H 2200 6250 50  0000 C CNN
 	1    2200 6250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L video-microwrave-rescue:CONN_02X05 EXPANDER501
-U 1 1 5C0083CE
-P 5600 2550
-AR Path="/5C0083CE" Ref="EXPANDER501"  Part="1" 
-AR Path="/5BE4E775/5C0083CE" Ref="EXPANDER501"  Part="1" 
-F 0 "EXPANDER501" H 5600 2850 50  0000 C CNN
-F 1 "CONN_02X05" H 5600 2250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 5600 1350 50  0001 C CNN
-F 3 "" H 5600 1350 50  0000 C CNN
-	1    5600 2550
-	1    0    0    -1  
-$EndComp
-Text Label 5350 2350 2    60   ~ 0
-expansion1
-Text Label 5350 2450 2    60   ~ 0
-expansion2
-Text Label 5350 2550 2    60   ~ 0
-expansion3
-Text Label 5350 2650 2    60   ~ 0
-expansion4
-Text Label 5850 2650 0    60   ~ 0
-expansion5
-Text Label 5850 2550 0    60   ~ 0
-expansion6
-Text Label 5850 2450 0    60   ~ 0
-expansion7
-Text Label 5850 2350 0    60   ~ 0
-expansion8
-Text Label 3950 1050 0    60   ~ 0
-expansion1
-Text Label 2800 1900 0    60   ~ 0
-expansion2
-Text Label 2800 2600 0    60   ~ 0
-expansion3
-Text Label 2800 3300 0    60   ~ 0
-expansion4
-Text Label 2800 4000 0    60   ~ 0
-expansion5
-Text Label 2800 4700 0    60   ~ 0
-expansion6
-Text Label 2800 5400 0    60   ~ 0
-expansion7
-Text Label 2800 6100 0    60   ~ 0
-expansion8
-$Comp
-L power1:Earth #PWR061
-U 1 1 5C008C4D
-P 4850 2750
-F 0 "#PWR061" H 4850 2500 50  0001 C CNN
-F 1 "Earth" H 4850 2600 50  0001 C CNN
-F 2 "" H 4850 2750 50  0000 C CNN
-F 3 "" H 4850 2750 50  0000 C CNN
-	1    4850 2750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2100 1100 2450 1100
-Wire Wire Line
-	2100 1350 2200 1350
-Wire Wire Line
-	2100 1800 2450 1800
-Wire Wire Line
-	2100 2050 2200 2050
-Wire Wire Line
-	2100 2500 2450 2500
-Wire Wire Line
-	2100 2750 2200 2750
-Wire Wire Line
-	2100 3200 2450 3200
-Wire Wire Line
-	2100 3450 2200 3450
-Wire Wire Line
-	2100 3900 2450 3900
-Wire Wire Line
-	2100 4150 2200 4150
-Wire Wire Line
-	2100 4600 2450 4600
-Wire Wire Line
-	2100 4850 2200 4850
-Wire Wire Line
-	2100 5300 2450 5300
-Wire Wire Line
-	2100 5550 2200 5550
-Wire Wire Line
-	2100 6000 2450 6000
+	2100 6100 2100 6250
 Wire Wire Line
 	2100 6250 2200 6250
-Wire Wire Line
-	2100 1200 2800 1200
-Wire Wire Line
-	2100 1900 2800 1900
-Wire Wire Line
-	2100 2600 2800 2600
-Wire Wire Line
-	2100 3300 2800 3300
-Wire Wire Line
-	2100 4000 2800 4000
-Wire Wire Line
-	2100 4700 2800 4700
-Wire Wire Line
-	2100 5400 2800 5400
-Wire Wire Line
-	2100 6100 2800 6100
-Wire Wire Line
-	4850 2750 5350 2750
-Connection ~ 5350 2750
-Text HLabel 2800 1200 2    60   Input ~ 0
-internal_cv
-Wire Wire Line
-	5350 2750 5850 2750
 $EndSCHEMATC

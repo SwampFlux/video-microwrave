@@ -365,7 +365,7 @@ Connection ~ 5350 4350
 Wire Wire Line
 	3600 2700 3600 2600
 Wire Wire Line
-	3600 2600 4800 2600
+	3600 2600 4700 2600
 Wire Wire Line
 	4300 3450 4300 3400
 Wire Wire Line
@@ -394,12 +394,12 @@ $EndComp
 $Comp
 L L L203
 U 1 1 5BE1E8D0
-P 4950 2600
-F 0 "L203" V 4900 2600 50  0000 C CNN
-F 1 "6u8H" V 5025 2600 50  0000 C CNN
-F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm" H 4950 2600 50  0001 C CNN
-F 3 "" H 4950 2600 50  0000 C CNN
-	1    4950 2600
+P 4850 2600
+F 0 "L203" V 4800 2600 50  0000 C CNN
+F 1 "6u8H" V 4925 2600 50  0000 C CNN
+F 2 "Choke_Axial_ThroughHole:Choke_Horizontal_RM10mm" H 4850 2600 50  0001 C CNN
+F 3 "" H 4850 2600 50  0000 C CNN
+	1    4850 2600
 	0    1    -1   0   
 $EndComp
 Connection ~ 4300 2600
@@ -415,7 +415,7 @@ F 3 "" H 5750 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2600 5450 2600
+	5000 2600 5450 2600
 Wire Wire Line
 	5750 2900 5750 3050
 $Comp

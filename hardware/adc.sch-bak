@@ -203,6 +203,13 @@ Wire Wire Line
 	5200 4050 5550 4050
 Text Label 5550 4050 0    60   ~ 0
 MOSI_5V
+Wire Wire Line
+	4800 2850 5300 2850
+Wire Wire Line
+	5300 2850 5300 4150
+Wire Wire Line
+	5300 4150 5200 4150
+Connection ~ 4800 2850
 $Comp
 L dk_Transistors-Bipolar-BJT-Single:2N2219A Q?
 U 1 1 5F407162
@@ -252,8 +259,4 @@ Text HLabel 9050 4400 2    60   Output ~ 0
 MOSI_3V3
 Wire Wire Line
 	8450 4400 9050 4400
-Text HLabel 5550 4150 2    50   Input ~ 0
-Channel_0
-Wire Wire Line
-	5200 4150 5550 4150
 $EndSCHEMATC
